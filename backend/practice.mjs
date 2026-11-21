@@ -36,4 +36,4 @@ assert.deepEqual((await request(plan,'GET',null,patient.idToken)).fields.speed,t
 await request(plan,'PATCH',target,patient.idToken,403);
 await request(plan,'PATCH',target,other.idToken,403);
 await request(db+'/accounts/'+other.localId,'PATCH',fields({role:'patient'}),other.idToken,403);
-console.log('Verified five synthetic walks, assigned reads, target delivery, and denied unassigned access.');
+console.log('Verified seven synthetic walks, assigned reads, target delivery, and denied unassigned access.');

@@ -14,7 +14,7 @@ Use the Flutter SDK from the project README, Chrome, a current Node installation
    firebase emulators:start --project demo-stridecare --only auth,firestore
    ```
 
-2. In another terminal, seed the fictional accounts and five dated walk records. This command also checks the access rules. Rerunning it restores the demo patient's target values.
+2. In another terminal, seed the fictional accounts and seven dated walk records. This command also checks the access rules. Rerunning it restores the demo patient's target values.
 
    ```sh
    node backend/practice.mjs

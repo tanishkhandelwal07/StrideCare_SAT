@@ -12,6 +12,19 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get sampleWeek => 'Explore a sample week';
+
+  @override
+  String get sampleSource =>
+      'Seven days of simulated cane readings for one fictional patient.';
+
+  @override
+  String get samplePdf => 'Download sample weekly PDF';
+
+  @override
+  String get walkingMinutesSample => 'Walking minutes';
+
+  @override
   String get appName => 'StrideCare';
 
   @override

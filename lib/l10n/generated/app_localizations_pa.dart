@@ -12,6 +12,19 @@ class AppLocalizationsPa extends AppLocalizations {
   AppLocalizationsPa([String locale = 'pa']) : super(locale);
 
   @override
+  String get sampleWeek => 'ਇੱਕ ਨਮੂਨਾ ਹਫ਼ਤਾ ਵੇਖੋ';
+
+  @override
+  String get sampleSource =>
+      'ਇੱਕ ਕਾਲਪਨਿਕ ਮਰੀਜ਼ ਦੀ ਛੜੀ ਦੇ ਸੱਤ ਦਿਨਾਂ ਦੇ ਨਮੂਨਾ ਅੰਕੜੇ।';
+
+  @override
+  String get samplePdf => 'ਨਮੂਨਾ ਹਫ਼ਤੇ ਦੀ ਪੀਡੀਐੱਫ ਡਾਊਨਲੋਡ ਕਰੋ';
+
+  @override
+  String get walkingMinutesSample => 'ਤੁਰਨ ਦੇ ਮਿੰਟ';
+
+  @override
   String get appName => 'ਸਟ੍ਰਾਈਡਕੇਅਰ';
 
   @override

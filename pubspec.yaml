@@ -46,6 +46,8 @@ flutter:
   uses-material-design: true
   generate: true
   assets:
+    - reports/StrideCare-week-2026-11-20.csv
+    - reports/StrideCare-week-2026-11-20.pdf
     - assets/fonts/Fraunces-OFL.txt
     - assets/fonts/NunitoSans-OFL.txt
     - assets/fonts/NotoSansDevanagari-OFL.txt

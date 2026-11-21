@@ -1,3 +1,5 @@
+import '../progress/sample_week.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -321,6 +323,7 @@ class _OnboardingState extends ConsumerState<Onboarding> {
                     page == (editing ? 7 : 8) ? s.finishSetup : s.nextStep,
                   ),
                 ),
+                if (page == 0 && !editing) const SampleWeekButton(),
                 if (page > (editing ? 6 : 0))
                   TextButton(
                     onPressed: saving

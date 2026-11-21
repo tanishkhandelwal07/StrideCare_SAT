@@ -101,6 +101,30 @@ abstract class AppLocalizations {
     Locale('pa'),
   ];
 
+  /// No description provided for @sampleWeek.
+  ///
+  /// In en, this message translates to:
+  /// **'Explore a sample week'**
+  String get sampleWeek;
+
+  /// No description provided for @sampleSource.
+  ///
+  /// In en, this message translates to:
+  /// **'Seven days of simulated cane readings for one fictional patient.'**
+  String get sampleSource;
+
+  /// No description provided for @samplePdf.
+  ///
+  /// In en, this message translates to:
+  /// **'Download sample weekly PDF'**
+  String get samplePdf;
+
+  /// No description provided for @walkingMinutesSample.
+  ///
+  /// In en, this message translates to:
+  /// **'Walking minutes'**
+  String get walkingMinutesSample;
+
   /// Patient app label.
   ///
   /// In en, this message translates to:

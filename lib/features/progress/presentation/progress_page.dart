@@ -1,3 +1,5 @@
+import '../sample_week.dart';
+
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -55,6 +57,7 @@ class ProgressPage extends ConsumerWidget {
               Text('${s.loadTrend} · ${w.avgLoad.round()}'),
             ],
           ],
+          const SampleWeekButton(),
           OutlinedButton(
             onPressed: () async {
               try {

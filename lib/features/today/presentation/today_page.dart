@@ -1,3 +1,5 @@
+import '../../progress/sample_week.dart';
+
 import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -26,12 +28,15 @@ class TodayPage extends ConsumerWidget {
     final today = (walks.value ?? []).where(
       (w) => DateUtils.isSameDay(now, w.startedAt),
     );
+    final example = ref.watch(sampleWeekProvider).value?.lastOrNull;
     final sample =
-        !ref.watch(connectedAccountProvider) && walks.hasValue && today.isEmpty;
-    // A five-minute, 72 steps/min example from the synthetic walk dataset.
-    final steps = sample ? 360 : today.fold(0, (n, w) => n + w.steps);
+        !ref.watch(connectedAccountProvider) &&
+        walks.hasValue &&
+        walks.value!.isEmpty &&
+        example != null;
+    final steps = sample ? example.steps : today.fold(0, (n, w) => n + w.steps);
     final time = sample
-        ? const Duration(minutes: 5)
+        ? Duration(seconds: (example.minutes * 60).round())
         : today.fold(
             Duration.zero,
             (n, w) => n + w.endedAt.difference(w.startedAt),
@@ -94,9 +99,18 @@ class TodayPage extends ConsumerWidget {
                   ],
                 ),
               ),
-            Text(s.todaySteps),
-            Text('$steps', style: CareTokens.figures),
+            Text(
+              sample
+                  ? MaterialLocalizations.of(context)
+                        .formatShortDate(example.date)
+                  : s.todaySteps,
+            ),
+            Text(
+              sample ? '$steps ${s.stepsWord}' : '$steps',
+              style: CareTokens.figures,
+            ),
             Text('${s.walkTime} · ${elapsed(time)}'),
+            if (sample) const SampleWeekButton(),
             if (today.isNotEmpty)
               Text(
                 '${s.pace} · ${paceWords(s, time.inSeconds == 0 ? 0 : today.fold(0.0, (n, w) => n + w.distanceM) / time.inSeconds)}',

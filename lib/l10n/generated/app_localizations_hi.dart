@@ -12,6 +12,19 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
+  String get sampleWeek => 'एक उदाहरण सप्ताह देखें';
+
+  @override
+  String get sampleSource =>
+      'एक काल्पनिक मरीज़ की छड़ी के सात दिनों के सिम्युलेटेड आँकड़े।';
+
+  @override
+  String get samplePdf => 'उदाहरण सप्ताह की पीडीएफ डाउनलोड करें';
+
+  @override
+  String get walkingMinutesSample => 'चलने के मिनट';
+
+  @override
   String get appName => 'स्ट्राइडकेयर';
 
   @override

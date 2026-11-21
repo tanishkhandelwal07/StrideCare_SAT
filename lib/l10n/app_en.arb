@@ -1,4 +1,9 @@
 {
+  "sampleWeek": "Explore a sample week",
+  "sampleSource": "Seven days of simulated cane readings for one fictional patient.",
+  "samplePdf": "Download sample weekly PDF",
+  "walkingMinutesSample": "Walking minutes",
+
   "@@locale": "en",
   "appName": "StrideCare",
   "@appName": {

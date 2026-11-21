@@ -1,0 +1,531 @@
+{
+  "@@locale": "en",
+  "appName": "StrideCare",
+  "@appName": {
+    "description": "Patient app label."
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Patient app label."
+  },
+  "progress": "Progress",
+  "@progress": {
+    "description": "Patient app label."
+  },
+  "wellness": "Wellness",
+  "@wellness": {
+    "description": "Patient app label."
+  },
+  "medicine": "Medicine",
+  "@medicine": {
+    "description": "Patient app label."
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Patient app label."
+  },
+  "todayHint": "See the steps from your practice cane.",
+  "@todayHint": {
+    "description": "Patient app placeholder."
+  },
+  "progressHint": "Follow the step counter as the practice cane moves.",
+  "@progressHint": {
+    "description": "Patient app placeholder."
+  },
+  "wellnessHint": "Open a meal idea and record your check-in.",
+  "@wellnessHint": {
+    "description": "Patient app placeholder."
+  },
+  "medicineHint": "Add a medicine, then tick it when taken.",
+  "@medicineHint": {
+    "description": "Patient app placeholder."
+  },
+  "settingsHint": "Connect the simulated cane to try its readings.",
+  "@settingsHint": {
+    "description": "Patient app placeholder."
+  },
+  "wellnessAdvice": "Confirm with your doctor or physio.",
+  "@wellnessAdvice": {
+    "description": "Persistent wellness footer."
+  },
+  "demo": "Practice cane",
+  "@demo": {
+    "description": "Patient interface label."
+  },
+  "connect": "Connect practice cane",
+  "@connect": {
+    "description": "Patient interface label."
+  },
+  "disconnect": "Disconnect cane",
+  "@disconnect": {
+    "description": "Patient interface label."
+  },
+  "stepsLabel": "Steps this visit",
+  "@stepsLabel": {
+    "description": "Patient interface label."
+  },
+  "pace": "Estimated pace (m/s)",
+  "@pace": {
+    "description": "Patient interface label."
+  },
+  "meal": "Meal idea",
+  "@meal": {
+    "description": "Patient interface label."
+  },
+  "recipe": "Dal with curd and roti",
+  "@recipe": {
+    "description": "Patient interface label."
+  },
+  "logged": "I had this meal",
+  "@logged": {
+    "description": "Patient interface label."
+  },
+  "medicineName": "Medicine name",
+  "@medicineName": {
+    "description": "Patient interface label."
+  },
+  "addMed": "Add medicine",
+  "@addMed": {
+    "description": "Patient interface label."
+  },
+  "visit": "Practice readings and check-ins last for this visit.",
+  "@visit": {
+    "description": "Patient interface label."
+  },
+  "readings": "Recent step readings",
+  "@readings": {
+    "description": "Patient interface label."
+  },
+  "noRead": "Connect the practice cane in Settings to see readings.",
+  "@noRead": {
+    "description": "Patient interface label."
+  },
+  "taken": "Taken",
+  "@taken": {
+    "description": "Patient interface label."
+  },
+  "nextStep": "Continue",
+  "@nextStep": {
+    "description": "Patient interface."
+  },
+  "finishSetup": "Save profile",
+  "@finishSetup": {
+    "description": "Patient interface."
+  },
+  "language": "Choose your language",
+  "@language": {
+    "description": "Patient interface."
+  },
+  "personName": "What should we call you?",
+  "@personName": {
+    "description": "Patient interface."
+  },
+  "nameLabel": "Name",
+  "@nameLabel": {
+    "description": "Patient interface."
+  },
+  "measurements": "Your height and age",
+  "@measurements": {
+    "description": "Patient interface."
+  },
+  "heightLabel": "Height (cm)",
+  "@heightLabel": {
+    "description": "Patient interface."
+  },
+  "ageLabel": "Age in years",
+  "@ageLabel": {
+    "description": "Patient interface."
+  },
+  "injury": "What are you recovering from?",
+  "@injury": {
+    "description": "Patient interface."
+  },
+  "hip": "Hip fracture",
+  "@hip": {
+    "description": "Patient interface."
+  },
+  "knee": "Knee fracture",
+  "@knee": {
+    "description": "Patient interface."
+  },
+  "ankle": "Ankle fracture",
+  "@ankle": {
+    "description": "Patient interface."
+  },
+  "joint": "Joint surgery",
+  "@joint": {
+    "description": "Patient interface."
+  },
+  "stroke": "Stroke",
+  "@stroke": {
+    "description": "Patient interface."
+  },
+  "dateLabel": "Date of injury or surgery",
+  "@dateLabel": {
+    "description": "Patient interface."
+  },
+  "side": "Which side is affected?",
+  "@side": {
+    "description": "Patient interface."
+  },
+  "leftSide": "Left",
+  "@leftSide": {
+    "description": "Patient interface."
+  },
+  "rightSide": "Right",
+  "@rightSide": {
+    "description": "Patient interface."
+  },
+  "bothSides": "Both",
+  "@bothSides": {
+    "description": "Patient interface."
+  },
+  "firstContact": "First emergency contact",
+  "@firstContact": {
+    "description": "Patient interface."
+  },
+  "secondContact": "Second emergency contact",
+  "@secondContact": {
+    "description": "Patient interface."
+  },
+  "contactNote": "Choose two people to contact after a fall. Practice mode saves their details on this device. Messages and calls are off.",
+  "@contactNote": {
+    "description": "Patient interface."
+  },
+  "phone": "Phone with country code",
+  "@phone": {
+    "description": "Patient interface."
+  },
+  "relationship": "Relationship",
+  "@relationship": {
+    "description": "Patient interface."
+  },
+  "codeLabel": "Physio code (optional)",
+  "@codeLabel": {
+    "description": "Patient interface."
+  },
+  "requiredField": "Please fill in this field.",
+  "@requiredField": {
+    "description": "Patient interface."
+  },
+  "invalidNumber": "Check this number and try again.",
+  "@invalidNumber": {
+    "description": "Patient interface."
+  },
+  "differentPhone": "Use a different number for the second person.",
+  "@differentPhone": {
+    "description": "Patient interface."
+  },
+  "saveError": "Couldn’t save on this device. Please try again.",
+  "@saveError": {
+    "description": "Patient interface."
+  },
+  "liveWalk": "Walk started. Take your time.",
+  "@liveWalk": {
+    "description": "Patient interface."
+  },
+  "walkSummary": "Your walk",
+  "@walkSummary": {
+    "description": "Patient interface."
+  },
+  "stepsWord": "Steps",
+  "@stepsWord": {
+    "description": "Patient interface."
+  },
+  "walkTime": "Walking time",
+  "@walkTime": {
+    "description": "Patient interface."
+  },
+  "distance": "Estimated distance (m)",
+  "@distance": {
+    "description": "Patient interface."
+  },
+  "loadTrend": "Cane load trend (N)",
+  "@loadTrend": {
+    "description": "Patient interface."
+  },
+  "slow": "Slow",
+  "@slow": {
+    "description": "Patient interface."
+  },
+  "comfortable": "Comfortable",
+  "@comfortable": {
+    "description": "Patient interface."
+  },
+  "brisk": "Brisk",
+  "@brisk": {
+    "description": "Patient interface."
+  },
+  "fixCane": "Cane not connected. Fix this",
+  "@fixCane": {
+    "description": "Patient interface."
+  },
+  "connectedLabel": "Connected",
+  "@connectedLabel": {
+    "description": "Patient interface."
+  },
+  "pairTitle": "Pair your practice cane",
+  "@pairTitle": {
+    "description": "Patient interface."
+  },
+  "pairHint": "This simulated module lets you try a walk without hardware. It begins sending practice readings when connected.",
+  "@pairHint": {
+    "description": "Patient interface."
+  },
+  "todaySteps": "Steps today",
+  "@todaySteps": {
+    "description": "Patient interface."
+  },
+  "returnToday": "See today",
+  "@returnToday": {
+    "description": "Patient interface."
+  },
+  "weeklyWalks": "Walks this week",
+  "@weeklyWalks": {
+    "description": "Patient interface."
+  },
+  "emptyWalks": "Your walks will appear here as the cane records them.",
+  "@emptyWalks": {
+    "description": "Patient interface."
+  },
+  "approvalLock": "Waiting for your physio’s approval",
+  "@approvalLock": {
+    "description": "Patient interface."
+  },
+  "morning": "Good morning",
+  "@morning": {
+    "description": "Patient interface."
+  },
+  "afternoon": "Good afternoon",
+  "@afternoon": {
+    "description": "Patient interface."
+  },
+  "evening": "Good evening",
+  "@evening": {
+    "description": "Patient interface."
+  },
+  "testBuzz": "Test the buzz",
+  "@testBuzz": {
+    "description": "Patient interface."
+  },
+  "buzzOk": "Practice buzz received.",
+  "@buzzOk": {
+    "description": "Patient interface."
+  },
+  "textSize": "Text size",
+  "@textSize": {
+    "description": "Patient interface."
+  },
+  "report": "Share weekly report",
+  "@report": {
+    "description": "Patient interface."
+  },
+  "peakPace": "Peak estimated pace (m/s)",
+  "@peakPace": {
+    "description": "Patient interface."
+  },
+  "cadenceLabel": "Cadence (steps/min)",
+  "@cadenceLabel": {
+    "description": "Patient interface."
+  },
+  "stepLength": "Estimated stride length (m per step)",
+  "@stepLength": {
+    "description": "Patient interface."
+  },
+  "gaitLabel": "Gait regularity (%)",
+  "@gaitLabel": {
+    "description": "Patient interface."
+  },
+  "fallsLabel": "Recorded falls",
+  "@fallsLabel": {
+    "description": "Patient interface."
+  },
+  "dosesLogged": "Medication entries marked taken",
+  "@dosesLogged": {
+    "description": "Patient interface."
+  },
+  "recoveryLabel": "Recovery score",
+  "@recoveryLabel": {
+    "description": "Patient interface."
+  },
+  "steady": "Steady",
+  "@steady": {
+    "description": "Patient interface."
+  },
+  "improving": "Picking up",
+  "@improving": {
+    "description": "Patient interface."
+  },
+  "slower": "A slower day",
+  "@slower": {
+    "description": "Patient interface."
+  },
+  "noBaseline": "Your recovery trend will appear after walks on two different days.",
+  "@noBaseline": {
+    "description": "Patient interface."
+  },
+  "lowerDay": "Today was slower. That happens in recovery. Rest well.",
+  "@lowerDay": {
+    "description": "Patient interface."
+  },
+  "goal": "Daily practice goal",
+  "@goal": {
+    "description": "Patient interface."
+  },
+  "minuteGoal": "Walking minutes",
+  "@minuteGoal": {
+    "description": "Patient interface."
+  },
+  "tasks": "Your routine",
+  "@tasks": {
+    "description": "Patient interface."
+  },
+  "simFall": "Practice fall detected. Are you okay?",
+  "@simFall": {
+    "description": "Patient interface."
+  },
+  "okay": "I’m okay",
+  "@okay": {
+    "description": "Patient interface."
+  },
+  "firstStage": "Practice alert for contact one",
+  "@firstStage": {
+    "description": "Patient interface."
+  },
+  "secondStage": "Practice alert for contact two",
+  "@secondStage": {
+    "description": "Patient interface."
+  },
+  "currentDate": "Day",
+  "@currentDate": {
+    "description": "Patient interface."
+  },
+  "milestone": "First 1,000-step day",
+  "@milestone": {
+    "description": "Patient interface."
+  },
+  "pausedWalk": "Pausing",
+  "@pausedWalk": {
+    "description": "Patient interface."
+  },
+  "contactEdit": "Edit emergency contacts",
+  "@contactEdit": {
+    "description": "Patient interface."
+  },
+  "deviceAttach": "Clip the module firmly onto the cane.",
+  "@deviceAttach": {
+    "description": "Patient interface."
+  },
+  "searchDevice": "Find a practice cane",
+  "@searchDevice": {
+    "description": "Patient interface."
+  },
+  "calibrate": "Practice calibration",
+  "@calibrate": {
+    "description": "Patient interface."
+  },
+  "still": "Stand still for five seconds.",
+  "@still": {
+    "description": "Patient interface."
+  },
+  "motionCheck": "Checking five simulated steps",
+  "@motionCheck": {
+    "description": "Patient interface."
+  },
+  "privacy": "Profile and practice walks are stored on this device.",
+  "@privacy": {
+    "description": "Patient interface."
+  },
+  "supplement": "Ask your doctor whether vitamin D or calcium suits you.",
+  "@supplement": {
+    "description": "Patient interface."
+  },
+  "clinic": "Physio dashboard",
+  "@clinic": {
+    "description": "Patient interface."
+  },
+  "localClinic": "Practice workspace on this device",
+  "@localClinic": {
+    "description": "Patient interface."
+  },
+  "noProfile": "Set up a patient profile in the patient app first.",
+  "@noProfile": {
+    "description": "Patient interface."
+  },
+  "alerts": "Changes to review",
+  "@alerts": {
+    "description": "Patient interface."
+  },
+  "noAlerts": "No changes flagged in the recorded days.",
+  "@noAlerts": {
+    "description": "Patient interface."
+  },
+  "riseLoad": "Cane load rose since the previous recorded day.",
+  "@riseLoad": {
+    "description": "Patient interface."
+  },
+  "dropActivity": "Steps dropped two days in a row.",
+  "@dropActivity": {
+    "description": "Patient interface."
+  },
+  "dropPace": "Estimated pace fell across three recorded days.",
+  "@dropPace": {
+    "description": "Patient interface."
+  },
+  "targets": "Practice targets",
+  "@targets": {
+    "description": "Patient interface."
+  },
+  "maxSpeed": "Maximum estimated pace (m/s)",
+  "@maxSpeed": {
+    "description": "Patient interface."
+  },
+  "maxCadence": "Maximum cadence (steps/min)",
+  "@maxCadence": {
+    "description": "Patient interface."
+  },
+  "maxLoad": "Maximum cane load (N)",
+  "@maxLoad": {
+    "description": "Patient interface."
+  },
+  "saveTargets": "Save targets",
+  "@saveTargets": {
+    "description": "Patient interface."
+  },
+  "breathing": "Seated breathing",
+  "@breathing": {
+    "description": "Patient interface."
+  },
+  "approved": "Physio approval",
+  "@approved": {
+    "description": "Patient interface."
+  },
+  "saved": "Saved on this device.",
+  "@saved": {
+    "description": "Patient interface."
+  },
+  "feedback": "Above your practice target. Take your time.",
+  "@feedback": {
+    "description": "Patient interface."
+  },
+  "family": "Family activity summary",
+  "@family": {
+    "description": "Patient interface."
+  },
+  "recipeSteps": "Cook the dal until soft. Serve with plain curd and roti.",
+  "@recipeSteps": {
+    "description": "Patient interface."
+  },
+  "eggMeal": "Egg bhurji with spinach and roti",
+  "@eggMeal": {
+    "description": "Patient interface."
+  },
+  "eggSteps": "Cook chopped spinach, add beaten egg and stir until fully cooked. Serve with roti.",
+  "@eggSteps": {
+    "description": "Patient interface."
+  },
+  "reminderOff": "Saved to your log. Notifications are off on this device.",
+  "@reminderOff": {
+    "description": "Patient interface."
+  }
+}

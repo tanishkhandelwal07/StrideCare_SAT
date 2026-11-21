@@ -1,0 +1,133 @@
+-- A user and both contacts are created in a single transaction. The deferred
+-- keys are checked at commit. Slot order and distinct numbers are DB invariants.
+CREATE TABLE users (
+  id INTEGER NOT NULL PRIMARY KEY,
+  name TEXT NOT NULL,
+  height_cm REAL NOT NULL CHECK (height_cm > 0),
+  age INTEGER NOT NULL CHECK (age > 0),
+  locale TEXT NOT NULL,
+  first_slot INTEGER NOT NULL DEFAULT 1 CHECK (first_slot = 1),
+  second_slot INTEGER NOT NULL DEFAULT 2 CHECK (second_slot = 2),
+  FOREIGN KEY (id, first_slot) REFERENCES emergency_contacts(user_id, position) DEFERRABLE INITIALLY DEFERRED,
+  FOREIGN KEY (id, second_slot) REFERENCES emergency_contacts(user_id, position) DEFERRABLE INITIALLY DEFERRED
+);
+
+CREATE TABLE emergency_contacts (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  position INTEGER NOT NULL CHECK (position IN (1, 2)),
+  name TEXT NOT NULL,
+  -- Store the canonical international number, so formatted duplicates cannot pass.
+  phone_e164 TEXT NOT NULL CHECK (
+    length(phone_e164) BETWEEN 8 AND 16 AND substr(phone_e164, 1, 1) = '+'
+    AND substr(phone_e164, 2, 1) BETWEEN '1' AND '9'
+    AND substr(phone_e164, 2) NOT GLOB '*[^0-9]*'
+  ),
+  relationship TEXT NOT NULL,
+  PRIMARY KEY (user_id, position),
+  UNIQUE (user_id, phone_e164)
+);
+
+CREATE TABLE injury_profiles (
+  user_id INTEGER NOT NULL PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+  injury_type TEXT NOT NULL,
+  surgery_date TEXT,
+  affected_side TEXT NOT NULL
+);
+
+-- Load is in newtons. Speeds are estimates in m/s, cadence in steps/min.
+-- stride_length_m is effective distance per counted step.
+CREATE TABLE walk_sessions (
+  id TEXT NOT NULL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  started_at DATETIME NOT NULL,
+  ended_at DATETIME NOT NULL CHECK (ended_at >= started_at),
+  steps INTEGER NOT NULL CHECK (steps >= 0),
+  avg_load REAL NOT NULL,
+  peak_load REAL NOT NULL,
+  avg_speed REAL NOT NULL,
+  peak_speed REAL NOT NULL,
+  cadence REAL NOT NULL,
+  stride_length_m REAL NOT NULL,
+  distance_m REAL NOT NULL,
+  gait_regularity REAL NOT NULL
+);
+
+-- day is the patient's local calendar date, YYYY-MM-DD.
+CREATE TABLE daily_metrics (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  day TEXT NOT NULL,
+  steps INTEGER NOT NULL,
+  walk_minutes REAL NOT NULL,
+  avg_load REAL NOT NULL,
+  peak_load REAL NOT NULL,
+  avg_speed REAL NOT NULL,
+  peak_speed REAL NOT NULL,
+  cadence REAL NOT NULL,
+  stride_length_m REAL NOT NULL,
+  distance_m REAL NOT NULL,
+  gait_regularity REAL NOT NULL,
+  PRIMARY KEY (user_id, day)
+);
+
+CREATE TABLE recovery_scores (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  day TEXT NOT NULL,
+  score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
+  PRIMARY KEY (user_id, day)
+);
+
+CREATE TABLE milestones (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  milestone_key TEXT NOT NULL,
+  achieved_at DATETIME NOT NULL,
+  PRIMARY KEY (user_id, milestone_key)
+);
+
+CREATE TABLE food_items (
+  id TEXT NOT NULL PRIMARY KEY,
+  name_key TEXT NOT NULL,
+  stage TEXT NOT NULL,
+  vegetarian BOOLEAN NOT NULL,
+  nutrient_tags TEXT NOT NULL
+);
+
+CREATE TABLE recipes (
+  id TEXT NOT NULL PRIMARY KEY,
+  food_item_id TEXT NOT NULL REFERENCES food_items(id),
+  title_key TEXT NOT NULL,
+  instructions_key TEXT NOT NULL
+);
+
+CREATE TABLE yoga_routines (
+  id TEXT NOT NULL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  title_key TEXT NOT NULL,
+  stage TEXT NOT NULL,
+  injury_tags TEXT NOT NULL,
+  physio_approved BOOLEAN NOT NULL DEFAULT FALSE
+);
+
+CREATE TABLE medication_logs (
+  id TEXT NOT NULL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  medicine_name TEXT NOT NULL,
+  scheduled_at DATETIME NOT NULL,
+  taken_at DATETIME
+);
+
+CREATE TABLE fall_events (
+  id TEXT NOT NULL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  detected_at DATETIME NOT NULL,
+  acknowledged_at DATETIME,
+  first_notified_at DATETIME,
+  second_notified_at DATETIME
+);
+
+CREATE TABLE device_infos (
+  id TEXT NOT NULL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  firmware TEXT,
+  battery_percent INTEGER CHECK (battery_percent BETWEEN 0 AND 100),
+  last_seen_at DATETIME
+);

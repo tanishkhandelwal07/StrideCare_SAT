@@ -1,0 +1,7 @@
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-dir: lib/l10n/generated
+nullable-getter: false
+# Flutter 3.50's generator still emits the SDK's compatibility delegates.
+header: "// ignore_for_file: deprecated_member_use"

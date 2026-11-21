@@ -1,0 +1,531 @@
+{
+  "@@locale": "pa",
+  "appName": "ਸਟ੍ਰਾਈਡਕੇਅਰ",
+  "@appName": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "today": "ਅੱਜ",
+  "@today": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "progress": "ਤਰੱਕੀ",
+  "@progress": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "wellness": "ਦੇਖਭਾਲ",
+  "@wellness": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "medicine": "ਦਵਾਈਆਂ",
+  "@medicine": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "settings": "ਸੈਟਿੰਗਾਂ",
+  "@settings": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app label."
+  },
+  "todayHint": "ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਨਾਲ ਦਰਜ ਕਦਮ ਵੇਖੋ।",
+  "@todayHint": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app placeholder."
+  },
+  "progressHint": "ਚੱਲਣ ਵੇਲੇ ਕਦਮਾਂ ਦੀ ਗਿਣਤੀ ਵੇਖੋ।",
+  "@progressHint": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app placeholder."
+  },
+  "wellnessHint": "ਖਾਣੇ ਦਾ ਸੁਝਾਅ ਵੇਖੋ ਤੇ ਆਪਣਾ ਖਾਣਾ ਦਰਜ ਕਰੋ।",
+  "@wellnessHint": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app placeholder."
+  },
+  "medicineHint": "ਦਵਾਈ ਜੋੜੋ ਤੇ ਲੈਣ ਮਗਰੋਂ ਨਿਸ਼ਾਨ ਲਾਓ।",
+  "@medicineHint": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app placeholder."
+  },
+  "settingsHint": "ਅੰਕੜੇ ਵੇਖਣ ਲਈ ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਜੋੜੋ।",
+  "@settingsHint": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Patient app placeholder."
+  },
+  "wellnessAdvice": "ਆਪਣੇ ਡਾਕਟਰ ਜਾਂ ਫ਼ਿਜ਼ੀਓ ਨਾਲ ਗੱਲ ਕਰ ਕੇ ਪੱਕਾ ਕਰ ਲਓ।",
+  "@wellnessAdvice": {
+    "description": "Native speaker review requested. Check terminology and spoken register. Persistent wellness footer."
+  },
+  "demo": "ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ",
+  "@demo": {
+    "description": "Native speaker review requested."
+  },
+  "connect": "ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਜੋੜੋ",
+  "@connect": {
+    "description": "Native speaker review requested."
+  },
+  "disconnect": "ਸੋਟੀ ਦਾ ਕਨੈਕਸ਼ਨ ਹਟਾਓ",
+  "@disconnect": {
+    "description": "Native speaker review requested."
+  },
+  "stepsLabel": "ਇਸ ਵਾਰੀ ਦੇ ਕਦਮ",
+  "@stepsLabel": {
+    "description": "Native speaker review requested."
+  },
+  "pace": "ਅੰਦਾਜ਼ਨ ਚਾਲ (ਮੀ/ਸ)",
+  "@pace": {
+    "description": "Native speaker review requested."
+  },
+  "meal": "ਖਾਣੇ ਦਾ ਸੁਝਾਅ",
+  "@meal": {
+    "description": "Native speaker review requested."
+  },
+  "recipe": "ਦਾਲ, ਦਹੀਂ ਤੇ ਰੋਟੀ",
+  "@recipe": {
+    "description": "Native speaker review requested."
+  },
+  "logged": "ਮੈਂ ਇਹ ਖਾਣਾ ਖਾਧਾ",
+  "@logged": {
+    "description": "Native speaker review requested."
+  },
+  "medicineName": "ਦਵਾਈ ਦਾ ਨਾਂ",
+  "@medicineName": {
+    "description": "Native speaker review requested."
+  },
+  "addMed": "ਦਵਾਈ ਜੋੜੋ",
+  "@addMed": {
+    "description": "Native speaker review requested."
+  },
+  "visit": "ਅਭਿਆਸ ਦੇ ਅੰਕੜੇ ਤੇ ਨਿਸ਼ਾਨ ਇਸ ਵਾਰੀ ਤੱਕ ਰਹਿਣਗੇ।",
+  "@visit": {
+    "description": "Native speaker review requested."
+  },
+  "readings": "ਹਾਲੀਆ ਕਦਮ",
+  "@readings": {
+    "description": "Native speaker review requested."
+  },
+  "noRead": "ਅੰਕੜੇ ਵੇਖਣ ਲਈ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਜੋੜੋ।",
+  "@noRead": {
+    "description": "Native speaker review requested."
+  },
+  "taken": "ਲੈ ਲਈ",
+  "@taken": {
+    "description": "Native speaker review requested."
+  },
+  "nextStep": "ਅੱਗੇ ਵਧੋ",
+  "@nextStep": {
+    "description": "Needs native-speaker review."
+  },
+  "finishSetup": "ਪ੍ਰੋਫ਼ਾਈਲ ਸੰਭਾਲੋ",
+  "@finishSetup": {
+    "description": "Needs native-speaker review."
+  },
+  "language": "ਆਪਣੀ ਭਾਸ਼ਾ ਚੁਣੋ",
+  "@language": {
+    "description": "Needs native-speaker review."
+  },
+  "personName": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਕਿਸ ਨਾਂ ਨਾਲ ਬੁਲਾਈਏ?",
+  "@personName": {
+    "description": "Needs native-speaker review."
+  },
+  "nameLabel": "ਨਾਂ",
+  "@nameLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "measurements": "ਤੁਹਾਡਾ ਕੱਦ ਅਤੇ ਉਮਰ",
+  "@measurements": {
+    "description": "Needs native-speaker review."
+  },
+  "heightLabel": "ਕੱਦ (ਸੈਮੀ)",
+  "@heightLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "ageLabel": "ਉਮਰ (ਸਾਲ)",
+  "@ageLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "injury": "ਤੁਸੀਂ ਕਿਸ ਸੱਟ ਜਾਂ ਬਿਮਾਰੀ ਤੋਂ ਠੀਕ ਹੋ ਰਹੇ ਹੋ?",
+  "@injury": {
+    "description": "Needs native-speaker review."
+  },
+  "hip": "ਚੂਲੇ ਦੀ ਹੱਡੀ ਟੁੱਟਣਾ",
+  "@hip": {
+    "description": "Needs native-speaker review."
+  },
+  "knee": "ਗੋਡੇ ਦੀ ਹੱਡੀ ਟੁੱਟਣਾ",
+  "@knee": {
+    "description": "Needs native-speaker review."
+  },
+  "ankle": "ਗਿੱਟੇ ਦੀ ਹੱਡੀ ਟੁੱਟਣਾ",
+  "@ankle": {
+    "description": "Needs native-speaker review."
+  },
+  "joint": "ਜੋੜ ਦਾ ਆਪਰੇਸ਼ਨ",
+  "@joint": {
+    "description": "Needs native-speaker review."
+  },
+  "stroke": "ਸਟ੍ਰੋਕ",
+  "@stroke": {
+    "description": "Needs native-speaker review."
+  },
+  "dateLabel": "ਸੱਟ ਜਾਂ ਆਪਰੇਸ਼ਨ ਦੀ ਤਾਰੀਖ",
+  "@dateLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "side": "ਕਿਹੜੇ ਪਾਸੇ ਅਸਰ ਹੋਇਆ ਹੈ?",
+  "@side": {
+    "description": "Needs native-speaker review."
+  },
+  "leftSide": "ਖੱਬਾ",
+  "@leftSide": {
+    "description": "Needs native-speaker review."
+  },
+  "rightSide": "ਸੱਜਾ",
+  "@rightSide": {
+    "description": "Needs native-speaker review."
+  },
+  "bothSides": "ਦੋਵੇਂ",
+  "@bothSides": {
+    "description": "Needs native-speaker review."
+  },
+  "firstContact": "ਪਹਿਲਾ ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ",
+  "@firstContact": {
+    "description": "Needs native-speaker review."
+  },
+  "secondContact": "ਦੂਜਾ ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ",
+  "@secondContact": {
+    "description": "Needs native-speaker review."
+  },
+  "contactNote": "ਡਿੱਗਣ ਵੇਲੇ ਸੰਪਰਕ ਲਈ ਦੋ ਜਣੇ ਚੁਣੋ। ਅਭਿਆਸ ਵਿੱਚ ਵੇਰਵੇ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿਣਗੇ। ਸੁਨੇਹੇ ਅਤੇ ਕਾਲਾਂ ਬੰਦ ਹਨ।",
+  "@contactNote": {
+    "description": "Needs native-speaker review."
+  },
+  "phone": "ਦੇਸ਼ ਦੇ ਕੋਡ ਨਾਲ ਫ਼ੋਨ ਨੰਬਰ",
+  "@phone": {
+    "description": "Needs native-speaker review."
+  },
+  "relationship": "ਰਿਸ਼ਤਾ",
+  "@relationship": {
+    "description": "Needs native-speaker review."
+  },
+  "codeLabel": "ਫਿਜ਼ੀਓ ਕੋਡ (ਜੇ ਹੋਵੇ)",
+  "@codeLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "requiredField": "ਇਹ ਜਾਣਕਾਰੀ ਭਰੋ ਜੀ।",
+  "@requiredField": {
+    "description": "Needs native-speaker review."
+  },
+  "invalidNumber": "ਨੰਬਰ ਵੇਖ ਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "@invalidNumber": {
+    "description": "Needs native-speaker review."
+  },
+  "differentPhone": "ਦੂਜੇ ਵਿਅਕਤੀ ਲਈ ਵੱਖਰਾ ਨੰਬਰ ਦਿਓ।",
+  "@differentPhone": {
+    "description": "Needs native-speaker review."
+  },
+  "saveError": "ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲਿਆ ਨਹੀਂ ਗਿਆ। ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "@saveError": {
+    "description": "Needs native-speaker review."
+  },
+  "liveWalk": "ਤੁਸੀਂ ਚੱਲਣਾ ਸ਼ੁਰੂ ਕਰ ਦਿੱਤਾ ਹੈ। ਆਰਾਮ ਨਾਲ ਚੱਲੋ।",
+  "@liveWalk": {
+    "description": "Needs native-speaker review."
+  },
+  "walkSummary": "ਤੁਹਾਡੀ ਸੈਰ",
+  "@walkSummary": {
+    "description": "Needs native-speaker review."
+  },
+  "stepsWord": "ਕਦਮ",
+  "@stepsWord": {
+    "description": "Needs native-speaker review."
+  },
+  "walkTime": "ਚੱਲਣ ਦਾ ਸਮਾਂ",
+  "@walkTime": {
+    "description": "Needs native-speaker review."
+  },
+  "distance": "ਅੰਦਾਜ਼ਨ ਦੂਰੀ (ਮੀਟਰ)",
+  "@distance": {
+    "description": "Needs native-speaker review."
+  },
+  "loadTrend": "ਸੋਟੀ ਉੱਤੇ ਭਾਰ ਦਾ ਰੁਝਾਨ (ਨਿਊਟਨ)",
+  "@loadTrend": {
+    "description": "Needs native-speaker review."
+  },
+  "slow": "ਹੌਲੀ",
+  "@slow": {
+    "description": "Needs native-speaker review."
+  },
+  "comfortable": "ਆਰਾਮਦਾਇਕ",
+  "@comfortable": {
+    "description": "Needs native-speaker review."
+  },
+  "brisk": "ਤੇਜ਼",
+  "@brisk": {
+    "description": "Needs native-speaker review."
+  },
+  "fixCane": "ਸੋਟੀ ਜੁੜੀ ਨਹੀਂ। ਇਸਨੂੰ ਜੋੜੋ",
+  "@fixCane": {
+    "description": "Needs native-speaker review."
+  },
+  "connectedLabel": "ਜੁੜੀ ਹੋਈ ਹੈ",
+  "@connectedLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "pairTitle": "ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਜੋੜੋ",
+  "@pairTitle": {
+    "description": "Needs native-speaker review."
+  },
+  "pairHint": "ਅਸਲੀ ਸੋਟੀ ਤੋਂ ਬਿਨਾਂ ਅਭਿਆਸ ਕਰੋ। ਜੋੜਨ ਉੱਤੇ ਰੀਡਿੰਗ ਆਉਣਗੀਆਂ।",
+  "@pairHint": {
+    "description": "Needs native-speaker review."
+  },
+  "todaySteps": "ਅੱਜ ਦੇ ਕਦਮ",
+  "@todaySteps": {
+    "description": "Needs native-speaker review."
+  },
+  "returnToday": "ਅੱਜ ਦਾ ਦਿਨ ਵੇਖੋ",
+  "@returnToday": {
+    "description": "Needs native-speaker review."
+  },
+  "weeklyWalks": "ਇਸ ਹਫ਼ਤੇ ਦੀਆਂ ਸੈਰਾਂ",
+  "@weeklyWalks": {
+    "description": "Needs native-speaker review."
+  },
+  "emptyWalks": "ਜਦੋਂ ਸੋਟੀ ਤੁਹਾਡੀਆਂ ਸੈਰਾਂ ਦਰਜ ਕਰੇਗੀ ਉਹ ਇੱਥੇ ਦਿਸਣਗੀਆਂ।",
+  "@emptyWalks": {
+    "description": "Needs native-speaker review."
+  },
+  "approvalLock": "ਫਿਜ਼ੀਓ ਦੀ ਮਨਜ਼ੂਰੀ ਦੀ ਉਡੀਕ ਹੈ",
+  "@approvalLock": {
+    "description": "Needs native-speaker review."
+  },
+  "morning": "ਸ਼ੁਭ ਸਵੇਰ",
+  "@morning": {
+    "description": "Needs native-speaker review."
+  },
+  "afternoon": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
+  "@afternoon": {
+    "description": "Needs native-speaker review."
+  },
+  "evening": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ",
+  "@evening": {
+    "description": "Needs native-speaker review."
+  },
+  "testBuzz": "ਕੰਬਣੀ ਪਰਖੋ",
+  "@testBuzz": {
+    "description": "Needs native-speaker review."
+  },
+  "buzzOk": "ਅਭਿਆਸ ਦੀ ਕੰਬਣੀ ਦਾ ਸੰਕੇਤ ਮਿਲ ਗਿਆ।",
+  "@buzzOk": {
+    "description": "Needs native-speaker review."
+  },
+  "textSize": "ਅੱਖਰਾਂ ਦਾ ਆਕਾਰ",
+  "@textSize": {
+    "description": "Needs native-speaker review."
+  },
+  "report": "ਹਫ਼ਤੇ ਦੀ ਰਿਪੋਰਟ ਸਾਂਝੀ ਕਰੋ",
+  "@report": {
+    "description": "Needs native-speaker review."
+  },
+  "peakPace": "ਸਭ ਤੋਂ ਤੇਜ਼ ਅੰਦਾਜ਼ਨ ਚਾਲ (ਮੀ/ਸ)",
+  "@peakPace": {
+    "description": "Needs native-speaker review."
+  },
+  "cadenceLabel": "ਕਦਮ ਪ੍ਰਤੀ ਮਿੰਟ",
+  "@cadenceLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "stepLength": "ਕਦਮ ਦੀ ਅੰਦਾਜ਼ਨ ਲੰਬਾਈ (ਮੀਟਰ)",
+  "@stepLength": {
+    "description": "Needs native-speaker review."
+  },
+  "gaitLabel": "ਕਦਮਾਂ ਦੀ ਲੈ (%)",
+  "@gaitLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "fallsLabel": "ਡਿੱਗਣ ਦੀਆਂ ਦਰਜ ਘਟਨਾਵਾਂ",
+  "@fallsLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "dosesLogged": "ਦਵਾਈ ਲੈਣ ਦੀਆਂ ਦਰਜ ਐਂਟਰੀਆਂ",
+  "@dosesLogged": {
+    "description": "Needs native-speaker review."
+  },
+  "recoveryLabel": "ਰਿਕਵਰੀ ਸਕੋਰ",
+  "@recoveryLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "steady": "ਸਥਿਰ",
+  "@steady": {
+    "description": "Needs native-speaker review."
+  },
+  "improving": "ਸੁਧਾਰ ਵੱਲ",
+  "@improving": {
+    "description": "Needs native-speaker review."
+  },
+  "slower": "ਅੱਜ ਚਾਲ ਕੁਝ ਹੌਲੀ ਹੈ",
+  "@slower": {
+    "description": "Needs native-speaker review."
+  },
+  "noBaseline": "ਦੋ ਵੱਖਰੇ ਦਿਨਾਂ ਦੀ ਸੈਰ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡਾ ਰੁਝਾਨ ਦਿਸੇਗਾ।",
+  "@noBaseline": {
+    "description": "Needs native-speaker review."
+  },
+  "lowerDay": "ਅੱਜ ਚਾਲ ਹੌਲੀ ਰਹੀ। ਠੀਕ ਹੋਣ ਵੇਲੇ ਅਜਿਹਾ ਹੁੰਦਾ ਹੈ। ਆਰਾਮ ਕਰੋ।",
+  "@lowerDay": {
+    "description": "Needs native-speaker review."
+  },
+  "goal": "ਰੋਜ਼ ਦੇ ਅਭਿਆਸ ਦਾ ਟੀਚਾ",
+  "@goal": {
+    "description": "Needs native-speaker review."
+  },
+  "minuteGoal": "ਚੱਲਣ ਦੇ ਮਿੰਟ",
+  "@minuteGoal": {
+    "description": "Needs native-speaker review."
+  },
+  "tasks": "ਤੁਹਾਡੀ ਰੋਜ਼ ਦੀ ਰੁਟੀਨ",
+  "@tasks": {
+    "description": "Needs native-speaker review."
+  },
+  "simFall": "ਅਭਿਆਸ ਵਿੱਚ ਡਿੱਗਣ ਦਾ ਸੰਕੇਤ ਮਿਲਿਆ। ਕੀ ਤੁਸੀਂ ਠੀਕ ਹੋ?",
+  "@simFall": {
+    "description": "Needs native-speaker review."
+  },
+  "okay": "ਮੈਂ ਠੀਕ ਹਾਂ",
+  "@okay": {
+    "description": "Needs native-speaker review."
+  },
+  "firstStage": "ਪਹਿਲੇ ਸੰਪਰਕ ਲਈ ਅਭਿਆਸ ਅਲਰਟ",
+  "@firstStage": {
+    "description": "Needs native-speaker review."
+  },
+  "secondStage": "ਦੂਜੇ ਸੰਪਰਕ ਲਈ ਅਭਿਆਸ ਅਲਰਟ",
+  "@secondStage": {
+    "description": "Needs native-speaker review."
+  },
+  "currentDate": "ਦਿਨ",
+  "@currentDate": {
+    "description": "Needs native-speaker review."
+  },
+  "milestone": "ਪਹਿਲਾ 1,000 ਕਦਮਾਂ ਵਾਲਾ ਦਿਨ",
+  "@milestone": {
+    "description": "Needs native-speaker review."
+  },
+  "pausedWalk": "ਥੋੜ੍ਹਾ ਰੁਕੇ ਹੋਏ ਹੋ",
+  "@pausedWalk": {
+    "description": "Needs native-speaker review."
+  },
+  "contactEdit": "ਐਮਰਜੈਂਸੀ ਸੰਪਰਕ ਬਦਲੋ",
+  "@contactEdit": {
+    "description": "Needs native-speaker review."
+  },
+  "deviceAttach": "ਮੋਡੀਊਲ ਨੂੰ ਸੋਟੀ ਉੱਤੇ ਮਜ਼ਬੂਤੀ ਨਾਲ ਲਗਾਓ।",
+  "@deviceAttach": {
+    "description": "Needs native-speaker review."
+  },
+  "searchDevice": "ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ ਲੱਭੋ",
+  "@searchDevice": {
+    "description": "Needs native-speaker review."
+  },
+  "calibrate": "ਅਭਿਆਸ ਲਈ ਜਾਂਚ",
+  "@calibrate": {
+    "description": "Needs native-speaker review."
+  },
+  "still": "ਪੰਜ ਸਕਿੰਟ ਅਡੋਲ ਖੜ੍ਹੇ ਰਹੋ।",
+  "@still": {
+    "description": "Needs native-speaker review."
+  },
+  "motionCheck": "ਅਭਿਆਸ ਦੇ ਪੰਜ ਕਦਮਾਂ ਦੀ ਜਾਂਚ ਹੋ ਰਹੀ ਹੈ",
+  "@motionCheck": {
+    "description": "Needs native-speaker review."
+  },
+  "privacy": "ਪ੍ਰੋਫ਼ਾਈਲ ਅਤੇ ਅਭਿਆਸ ਦੀਆਂ ਸੈਰਾਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
+  "@privacy": {
+    "description": "Needs native-speaker review."
+  },
+  "supplement": "ਆਪਣੇ ਡਾਕਟਰ ਨੂੰ ਪੁੱਛੋ ਕਿ ਵਿਟਾਮਿਨ ਡੀ ਜਾਂ ਕੈਲਸ਼ੀਅਮ ਤੁਹਾਡੇ ਲਈ ਠੀਕ ਹੈ ਜਾਂ ਨਹੀਂ।",
+  "@supplement": {
+    "description": "Needs native-speaker review."
+  },
+  "clinic": "ਫਿਜ਼ੀਓ ਡੈਸ਼ਬੋਰਡ",
+  "@clinic": {
+    "description": "Needs native-speaker review."
+  },
+  "localClinic": "ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਅਭਿਆਸ ਦੀ ਥਾਂ",
+  "@localClinic": {
+    "description": "Needs native-speaker review."
+  },
+  "noProfile": "ਪਹਿਲਾਂ ਮਰੀਜ਼ ਦੀ ਐਪ ਵਿੱਚ ਪ੍ਰੋਫ਼ਾਈਲ ਬਣਾਓ।",
+  "@noProfile": {
+    "description": "Needs native-speaker review."
+  },
+  "alerts": "ਵੇਖਣ ਵਾਲੀਆਂ ਤਬਦੀਲੀਆਂ",
+  "@alerts": {
+    "description": "Needs native-speaker review."
+  },
+  "noAlerts": "ਦਰਜ ਦਿਨਾਂ ਵਿੱਚ ਕੋਈ ਤਬਦੀਲੀ ਚਿੰਨ੍ਹਿਤ ਨਹੀਂ ਹੈ।",
+  "@noAlerts": {
+    "description": "Needs native-speaker review."
+  },
+  "riseLoad": "ਪਿਛਲੇ ਦਰਜ ਦਿਨ ਤੋਂ ਸੋਟੀ ਉੱਤੇ ਭਾਰ ਵਧਿਆ ਹੈ।",
+  "@riseLoad": {
+    "description": "Needs native-speaker review."
+  },
+  "dropActivity": "ਲਗਾਤਾਰ ਦੋ ਦਿਨਾਂ ਤੋਂ ਕਦਮ ਘਟੇ ਹਨ।",
+  "@dropActivity": {
+    "description": "Needs native-speaker review."
+  },
+  "dropPace": "ਤਿੰਨ ਦਿਨਾਂ ਵਿੱਚ ਅੰਦਾਜ਼ਨ ਚਾਲ ਹੌਲੀ ਹੋਈ ਹੈ।",
+  "@dropPace": {
+    "description": "Needs native-speaker review."
+  },
+  "targets": "ਅਭਿਆਸ ਦੇ ਟੀਚੇ",
+  "@targets": {
+    "description": "Needs native-speaker review."
+  },
+  "maxSpeed": "ਵੱਧ ਤੋਂ ਵੱਧ ਅੰਦਾਜ਼ਨ ਚਾਲ (ਮੀ/ਸ)",
+  "@maxSpeed": {
+    "description": "Needs native-speaker review."
+  },
+  "maxCadence": "ਵੱਧ ਤੋਂ ਵੱਧ ਕਦਮ ਪ੍ਰਤੀ ਮਿੰਟ",
+  "@maxCadence": {
+    "description": "Needs native-speaker review."
+  },
+  "maxLoad": "ਸੋਟੀ ਉੱਤੇ ਵੱਧ ਤੋਂ ਵੱਧ ਭਾਰ (ਨਿਊਟਨ)",
+  "@maxLoad": {
+    "description": "Needs native-speaker review."
+  },
+  "saveTargets": "ਟੀਚੇ ਸੰਭਾਲੋ",
+  "@saveTargets": {
+    "description": "Needs native-speaker review."
+  },
+  "breathing": "ਬੈਠ ਕੇ ਸਾਹ ਦਾ ਅਭਿਆਸ",
+  "@breathing": {
+    "description": "Needs native-speaker review."
+  },
+  "approved": "ਫਿਜ਼ੀਓ ਦੀ ਮਨਜ਼ੂਰੀ",
+  "@approved": {
+    "description": "Needs native-speaker review."
+  },
+  "saved": "ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲਿਆ ਗਿਆ।",
+  "@saved": {
+    "description": "Needs native-speaker review."
+  },
+  "feedback": "ਅਭਿਆਸ ਦੇ ਟੀਚੇ ਤੋਂ ਉੱਪਰ ਹੈ। ਆਰਾਮ ਨਾਲ ਚੱਲੋ।",
+  "@feedback": {
+    "description": "Needs native-speaker review."
+  },
+  "family": "ਪਰਿਵਾਰ ਲਈ ਸਰਗਰਮੀ ਦਾ ਸਾਰ",
+  "@family": {
+    "description": "Needs native-speaker review."
+  },
+  "recipeSteps": "ਦਾਲ ਨੂੰ ਨਰਮ ਹੋਣ ਤੱਕ ਪਕਾਓ। ਸਾਦੇ ਦਹੀਂ ਅਤੇ ਰੋਟੀ ਨਾਲ ਪਰੋਸੋ।",
+  "@recipeSteps": {
+    "description": "Needs native-speaker review."
+  },
+  "eggMeal": "ਪਾਲਕ ਵਾਲੀ ਅੰਡੇ ਦੀ ਭੁਰਜੀ ਅਤੇ ਰੋਟੀ",
+  "@eggMeal": {
+    "description": "Needs native-speaker review."
+  },
+  "eggSteps": "ਕੱਟੀ ਪਾਲਕ ਪਕਾਓ। ਫੈਂਟਿਆ ਅੰਡਾ ਪਾ ਕੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਕਾਓ ਅਤੇ ਰੋਟੀ ਨਾਲ ਪਰੋਸੋ।",
+  "@eggSteps": {
+    "description": "Needs native-speaker review."
+  },
+  "reminderOff": "ਦਵਾਈ ਦਰਜ ਹੋ ਗਈ ਹੈ। ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੂਚਨਾਵਾਂ ਬੰਦ ਹਨ।",
+  "@reminderOff": {
+    "description": "Needs native-speaker review."
+  }
+}

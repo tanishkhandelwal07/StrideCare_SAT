@@ -579,5 +579,9 @@
   "sharedPrivacy": "आपके फ़िज़ियो सिंक की गई सैर देख सकते हैं और लक्ष्य तय कर सकते हैं। संपर्क और दवाएँ इसी डिवाइस पर रहती हैं।",
   "@sharedPrivacy": {
     "description": "Needs native-speaker review."
+  },
+  "sampleActivity": "उदाहरण की गतिविधि · अभ्यास वाली छड़ी",
+  "@sampleActivity": {
+    "description": "Needs native-speaker review."
   }
 }

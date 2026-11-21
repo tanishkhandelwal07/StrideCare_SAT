@@ -579,5 +579,9 @@
   "sharedPrivacy": "Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.",
   "@sharedPrivacy": {
     "description": "Patient data sharing."
+  },
+  "sampleActivity": "Sample activity · Practice cane",
+  "@sampleActivity": {
+    "description": "Label for illustrative walk totals."
   }
 }

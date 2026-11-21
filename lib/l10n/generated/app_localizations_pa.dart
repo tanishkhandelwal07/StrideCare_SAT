@@ -460,4 +460,7 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get sharedPrivacy =>
       'ਤੁਹਾਡਾ ਫਿਜ਼ੀਓ ਸਿੰਕ ਕੀਤੀਆਂ ਸੈਰਾਂ ਵੇਖ ਕੇ ਟੀਚੇ ਰੱਖ ਸਕਦਾ ਹੈ। ਸੰਪਰਕ ਅਤੇ ਦਵਾਈਆਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।';
+
+  @override
+  String get sampleActivity => 'ਨਮੂਨੇ ਦੀ ਸਰਗਰਮੀ · ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ';
 }

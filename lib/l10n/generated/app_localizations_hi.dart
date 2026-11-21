@@ -456,4 +456,7 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get sharedPrivacy =>
       'आपके फ़िज़ियो सिंक की गई सैर देख सकते हैं और लक्ष्य तय कर सकते हैं। संपर्क और दवाएँ इसी डिवाइस पर रहती हैं।';
+
+  @override
+  String get sampleActivity => 'उदाहरण की गतिविधि · अभ्यास वाली छड़ी';
 }

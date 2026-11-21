@@ -9,6 +9,7 @@ import '../../walk/walk_controller.dart';
 import '../../walk/walk_views.dart';
 import 'cane_illustration.dart';
 import '../../clinic/targets.dart';
+import '../../settings/presentation/settings_page.dart';
 import '../../../app/navigation.dart';
 import '../../progress/daily_metrics.dart';
 import '../../progress/recovery_score.dart';
@@ -25,11 +26,16 @@ class TodayPage extends ConsumerWidget {
     final today = (walks.value ?? []).where(
       (w) => DateUtils.isSameDay(now, w.startedAt),
     );
-    final steps = today.fold(0, (n, w) => n + w.steps);
-    final time = today.fold(
-      Duration.zero,
-      (n, w) => n + w.endedAt.difference(w.startedAt),
-    );
+    final sample =
+        !ref.watch(connectedAccountProvider) && walks.hasValue && today.isEmpty;
+    // A five-minute, 72 steps/min example from the synthetic walk dataset.
+    final steps = sample ? 360 : today.fold(0, (n, w) => n + w.steps);
+    final time = sample
+        ? const Duration(minutes: 5)
+        : today.fold(
+            Duration.zero,
+            (n, w) => n + w.endedAt.difference(w.startedAt),
+          );
     final targets = ref.watch(targetsProvider).value;
     final days = ref.watch(metricsProvider).value ?? [];
     final hasBaseline = days.length >= 2 && days.first.day == dayKey(now);
@@ -47,7 +53,12 @@ class TodayPage extends ConsumerWidget {
       content: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(s.demo, style: CareTokens.label),
+          Text(
+            sample && !walks.isLoading && !walks.hasError
+                ? s.sampleActivity
+                : s.demo,
+            style: CareTokens.label,
+          ),
           const Divider(),
           if (walks.hasError)
             Text(s.saveError)

@@ -459,4 +459,7 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get sharedPrivacy =>
       'Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.';
+
+  @override
+  String get sampleActivity => 'Sample activity · Practice cane';
 }

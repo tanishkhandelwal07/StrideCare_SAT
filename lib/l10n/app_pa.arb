@@ -579,5 +579,9 @@
   "sharedPrivacy": "ਤੁਹਾਡਾ ਫਿਜ਼ੀਓ ਸਿੰਕ ਕੀਤੀਆਂ ਸੈਰਾਂ ਵੇਖ ਕੇ ਟੀਚੇ ਰੱਖ ਸਕਦਾ ਹੈ। ਸੰਪਰਕ ਅਤੇ ਦਵਾਈਆਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।",
   "@sharedPrivacy": {
     "description": "Needs native-speaker review."
+  },
+  "sampleActivity": "ਨਮੂਨੇ ਦੀ ਸਰਗਰਮੀ · ਅਭਿਆਸ ਵਾਲੀ ਸੋਟੀ",
+  "@sampleActivity": {
+    "description": "Needs native-speaker review."
   }
 }

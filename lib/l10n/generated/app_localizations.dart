@@ -970,6 +970,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.'**
   String get sharedPrivacy;
+
+  /// Label for illustrative walk totals.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample activity · Practice cane'**
+  String get sampleActivity;
 }
 
 class _AppLocalizationsDelegate

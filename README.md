@@ -2,6 +2,18 @@
 
 StrideCare is an offline-first recovery companion for people using a smart cane between physiotherapy visits. It supports physiotherapy and has no medical-device function.
 
+## Hardware prototype
+
+![Cane prototype with the ESP32 and sensors mounted on a breadboard](docs/hardware/cane-prototype.jpg)
+
+![Close-up of the ESP32 development board and breadboard wiring](docs/hardware/esp32.jpg)
+
+![Sensor modules mounted beside the ESP32](docs/hardware/sensor-layout.jpg)
+
+![Close-up of the sensor breakout boards](docs/hardware/sensor-breakouts.jpg)
+
+![HC-SR04 ultrasonic sensor and its pin labels](docs/hardware/ultrasonic.jpg)
+
 ## Run
 
 Use Flutter **3.50.1 stable** with Dart **3.14.0**. The project root is the folder containing this file. Install Chrome for web, Android SDK Platform 37 and a compatible JDK for Android, or Xcode with its first-launch components, CocoaPods and an iOS simulator or provisioned device for iOS. Run `flutter doctor -v` to check the toolchain for your target.

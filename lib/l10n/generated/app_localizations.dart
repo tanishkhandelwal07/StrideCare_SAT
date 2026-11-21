@@ -892,6 +892,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Saved to your log. Notifications are off on this device.'**
   String get reminderOff;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Your changes are synced.'**
+  String get planSaved;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get signIn;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get signOut;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Email address'**
+  String get emailAddress;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get passwordLabel;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Connected care'**
+  String get cloudWorkspace;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Check your email, password and connection, then try again.'**
+  String get signInError;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Ask your clinic to link this account.'**
+  String get noRole;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Assigned patients will appear here.'**
+  String get noAssignments;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Recent walks'**
+  String get recentWalks;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn’t load shared data. Check your connection and account access.'**
+  String get cloudError;
+
+  /// Connected care workspace
+  ///
+  /// In en, this message translates to:
+  /// **'Sync interrupted. Your walks stay on this device. Check your connection.'**
+  String get syncProblem;
+
+  /// Patient data sharing.
+  ///
+  /// In en, this message translates to:
+  /// **'Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.'**
+  String get sharedPrivacy;
 }
 
 class _AppLocalizationsDelegate

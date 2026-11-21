@@ -60,13 +60,15 @@ class ClinicPage extends ConsumerWidget {
 }
 
 class TargetForm extends ConsumerStatefulWidget {
-  const TargetForm(this.targets, {super.key});
+  const TargetForm(this.targets, {super.key, this.onSave});
+  final Future<void> Function(CareTargets)? onSave;
   final CareTargets targets;
   @override
   ConsumerState<TargetForm> createState() => _TargetFormState();
 }
 
 class _TargetFormState extends ConsumerState<TargetForm> {
+  bool saving = false;
   final form = GlobalKey<FormState>();
   late final fields = [
     widget.targets.maxSpeed,
@@ -121,21 +123,44 @@ class _TargetFormState extends ConsumerState<TargetForm> {
             onChanged: (v) => setState(() => breathing = v == true),
           ),
           FilledButton(
-            onPressed: () async {
-              if (!form.currentState!.validate()) return;
-              await CareTargets(
-                maxSpeed: number(0),
-                maxCadence: number(1),
-                maxLoad: number(2),
-                steps: number(3),
-                minutes: number(4),
-                breathing: breathing,
-              ).save(ref.read(databaseProvider));
-              if (context.mounted) {
-                ScaffoldMessenger.of(context)
-                    .showSnackBar(SnackBar(content: Text(s.saved)));
-              }
-            },
+            onPressed: saving
+                ? null
+                : () async {
+                    if (!form.currentState!.validate()) return;
+                    final updated = CareTargets(
+                      maxSpeed: number(0),
+                      maxCadence: number(1),
+                      maxLoad: number(2),
+                      steps: number(3),
+                      minutes: number(4),
+                      breathing: breathing,
+                    );
+                    setState(() => saving = true);
+                    try {
+                      if (widget.onSave case final save?) {
+                        await save(updated);
+                      } else {
+                        await updated.save(ref.read(databaseProvider));
+                      }
+                    } catch (_) {
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context)
+                            .showSnackBar(SnackBar(content: Text(s.saveError)));
+                      }
+                      return;
+                    } finally {
+                      if (mounted) setState(() => saving = false);
+                    }
+                    if (context.mounted) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            widget.onSave == null ? s.saved : s.planSaved,
+                          ),
+                        ),
+                      );
+                    }
+                  },
             child: Text(s.saveTargets),
           ),
         ],

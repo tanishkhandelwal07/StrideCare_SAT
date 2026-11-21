@@ -414,4 +414,46 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get reminderOff => 'दवा दर्ज हो गई है। इस डिवाइस पर सूचनाएँ बंद हैं।';
+
+  @override
+  String get planSaved => 'बदलाव सिंक हो गए हैं।';
+
+  @override
+  String get signIn => 'साइन इन करें';
+
+  @override
+  String get signOut => 'साइन आउट करें';
+
+  @override
+  String get emailAddress => 'ईमेल पता';
+
+  @override
+  String get passwordLabel => 'पासवर्ड';
+
+  @override
+  String get cloudWorkspace => 'देखभाल खाता';
+
+  @override
+  String get signInError => 'ईमेल, पासवर्ड और कनेक्शन जाँचकर फिर कोशिश करें।';
+
+  @override
+  String get noRole => 'अपने क्लिनिक से यह खाता जोड़ने को कहें।';
+
+  @override
+  String get noAssignments => 'आपके मरीज़ यहाँ दिखेंगे।';
+
+  @override
+  String get recentWalks => 'हाल की सैर';
+
+  @override
+  String get cloudError =>
+      'साझा जानकारी नहीं मिली। अपना कनेक्शन और खाते की पहुँच जाँचें।';
+
+  @override
+  String get syncProblem =>
+      'सिंक रुक गया है। सैर इसी डिवाइस पर सहेजी गई हैं। अपना कनेक्शन जाँचें।';
+
+  @override
+  String get sharedPrivacy =>
+      'आपके फ़िज़ियो सिंक की गई सैर देख सकते हैं और लक्ष्य तय कर सकते हैं। संपर्क और दवाएँ इसी डिवाइस पर रहती हैं।';
 }

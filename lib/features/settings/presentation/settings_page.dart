@@ -6,7 +6,10 @@ import '../../../design/section_page.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../storage/care_database.dart';
 import '../../profile/profile.dart';
+import '../../clinic/targets.dart';
 import '../../walk/walk_views.dart';
+
+final connectedAccountProvider = Provider<bool>((ref) => false);
 
 final sizeProvider = FutureProvider<double>(
   (ref) async =>
@@ -64,7 +67,18 @@ class SettingsPage extends ConsumerWidget {
             },
             child: Text(s.contactEdit),
           ),
-          Text(s.privacy),
+          Text(
+            ref.watch(connectedAccountProvider) ? s.sharedPrivacy : s.privacy,
+          ),
+          if (ref.watch(connectedAccountProvider)) ...[
+            const Divider(),
+            Text(s.targets),
+            if (ref.watch(targetsProvider).value?.maxSpeed case final speed?)
+              Text('${s.maxSpeed} · ${speed.toStringAsFixed(2)}'),
+            if (ref.watch(targetsProvider).value?.maxCadence
+                case final cadence?)
+              Text('${s.maxCadence} · ${cadence.round()}'),
+          ],
           const Divider(),
           Text(s.textSize),
           DropdownButton<double>(

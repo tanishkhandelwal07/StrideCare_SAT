@@ -19,27 +19,30 @@ class CareTargets {
       (maxSpeed != null && speed > maxSpeed!) ||
       (maxCadence != null && cadence > maxCadence!) ||
       (maxLoad != null && load > maxLoad!);
-  Future<void> save(CareDatabase db) => db.setPreference(
-    'targets',
-    jsonEncode({
-      'speed': maxSpeed,
-      'cadence': maxCadence,
-      'load': maxLoad,
-      'steps': steps,
-      'minutes': minutes,
-      'breathing': breathing,
-    }),
-  );
+  Map<String, dynamic> toMap() => {
+    'speed': maxSpeed,
+    'cadence': maxCadence,
+    'load': maxLoad,
+    'steps': steps,
+    'minutes': minutes,
+    'breathing': breathing,
+  };
+  Future<void> save(CareDatabase db) =>
+      db.setPreference('targets', jsonEncode(toMap()));
   static Future<CareTargets> read(CareDatabase db) async {
     final raw = await db.preference('targets');
-    if (raw == null) return const CareTargets();
-    final m = jsonDecode(raw) as Map<String, dynamic>;
+    return raw == null
+        ? const CareTargets()
+        : CareTargets.fromMap(jsonDecode(raw));
+  }
+
+  factory CareTargets.fromMap(Map<String, dynamic> m) {
     return CareTargets(
-      maxSpeed: m['speed'],
-      maxCadence: m['cadence'],
-      maxLoad: m['load'],
-      steps: m['steps'],
-      minutes: m['minutes'],
+      maxSpeed: (m['speed'] as num?)?.toDouble(),
+      maxCadence: (m['cadence'] as num?)?.toDouble(),
+      maxLoad: (m['load'] as num?)?.toDouble(),
+      steps: (m['steps'] as num?)?.toDouble(),
+      minutes: (m['minutes'] as num?)?.toDouble(),
       breathing: m['breathing'] == true,
     );
   }

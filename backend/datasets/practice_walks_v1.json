@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "Synthetic engineering fixtures; one fictional patient. Values are not clinical reference ranges.",
+  "walks": [
+    {"id":"practice-01","startMs":1794780000000,"endMs":1794780300000,"steps":300,"distanceM":150,"avgSpeed":0.5,"cadence":60,"avgLoad":110},
+    {"id":"practice-02","startMs":1794866400000,"endMs":1794866700000,"steps":330,"distanceM":165,"avgSpeed":0.55,"cadence":66,"avgLoad":106},
+    {"id":"practice-03","startMs":1794952800000,"endMs":1794953100000,"steps":360,"distanceM":180,"avgSpeed":0.6,"cadence":72,"avgLoad":100},
+    {"id":"practice-04","startMs":1795039200000,"endMs":1795039500000,"steps":336,"distanceM":168,"avgSpeed":0.56,"cadence":67.2,"avgLoad":106},
+    {"id":"practice-05","startMs":1795125600000,"endMs":1795125900000,"steps":306,"distanceM":153,"avgSpeed":0.51,"cadence":61.2,"avgLoad":130}
+  ]
+}

@@ -527,5 +527,57 @@
   "reminderOff": "Saved to your log. Notifications are off on this device.",
   "@reminderOff": {
     "description": "Patient interface."
+  },
+  "planSaved": "Your changes are synced.",
+  "@planSaved": {
+    "description": "Connected care workspace"
+  },
+  "signIn": "Sign in",
+  "@signIn": {
+    "description": "Connected care workspace"
+  },
+  "signOut": "Sign out",
+  "@signOut": {
+    "description": "Connected care workspace"
+  },
+  "emailAddress": "Email address",
+  "@emailAddress": {
+    "description": "Connected care workspace"
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Connected care workspace"
+  },
+  "cloudWorkspace": "Connected care",
+  "@cloudWorkspace": {
+    "description": "Connected care workspace"
+  },
+  "signInError": "Check your email, password and connection, then try again.",
+  "@signInError": {
+    "description": "Connected care workspace"
+  },
+  "noRole": "Ask your clinic to link this account.",
+  "@noRole": {
+    "description": "Connected care workspace"
+  },
+  "noAssignments": "Assigned patients will appear here.",
+  "@noAssignments": {
+    "description": "Connected care workspace"
+  },
+  "recentWalks": "Recent walks",
+  "@recentWalks": {
+    "description": "Connected care workspace"
+  },
+  "cloudError": "Couldn’t load shared data. Check your connection and account access.",
+  "@cloudError": {
+    "description": "Connected care workspace"
+  },
+  "syncProblem": "Sync interrupted. Your walks stay on this device. Check your connection.",
+  "@syncProblem": {
+    "description": "Connected care workspace"
+  },
+  "sharedPrivacy": "Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.",
+  "@sharedPrivacy": {
+    "description": "Patient data sharing."
   }
 }

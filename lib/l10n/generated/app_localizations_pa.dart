@@ -418,4 +418,46 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get reminderOff =>
       'ਦਵਾਈ ਦਰਜ ਹੋ ਗਈ ਹੈ। ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੂਚਨਾਵਾਂ ਬੰਦ ਹਨ।';
+
+  @override
+  String get planSaved => 'ਤਬਦੀਲੀਆਂ ਸਿੰਕ ਹੋ ਗਈਆਂ ਹਨ।';
+
+  @override
+  String get signIn => 'ਸਾਈਨ ਇਨ ਕਰੋ';
+
+  @override
+  String get signOut => 'ਸਾਈਨ ਆਉਟ ਕਰੋ';
+
+  @override
+  String get emailAddress => 'ਈਮੇਲ ਪਤਾ';
+
+  @override
+  String get passwordLabel => 'ਪਾਸਵਰਡ';
+
+  @override
+  String get cloudWorkspace => 'ਦੇਖਭਾਲ ਖਾਤਾ';
+
+  @override
+  String get signInError => 'ਈਮੇਲ, ਪਾਸਵਰਡ ਅਤੇ ਕਨੈਕਸ਼ਨ ਵੇਖ ਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get noRole => 'ਆਪਣੇ ਕਲੀਨਿਕ ਨੂੰ ਇਹ ਖਾਤਾ ਜੋੜਨ ਲਈ ਕਹੋ।';
+
+  @override
+  String get noAssignments => 'ਤੁਹਾਡੇ ਮਰੀਜ਼ ਇੱਥੇ ਦਿਸਣਗੇ।';
+
+  @override
+  String get recentWalks => 'ਹਾਲ ਦੀਆਂ ਸੈਰਾਂ';
+
+  @override
+  String get cloudError =>
+      'ਸਾਂਝੀ ਜਾਣਕਾਰੀ ਨਹੀਂ ਮਿਲੀ। ਕਨੈਕਸ਼ਨ ਅਤੇ ਖਾਤੇ ਦੀ ਪਹੁੰਚ ਵੇਖੋ।';
+
+  @override
+  String get syncProblem =>
+      'ਸਿੰਕ ਰੁਕ ਗਿਆ ਹੈ। ਸੈਰਾਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲੀਆਂ ਹਨ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਵੇਖੋ।';
+
+  @override
+  String get sharedPrivacy =>
+      'ਤੁਹਾਡਾ ਫਿਜ਼ੀਓ ਸਿੰਕ ਕੀਤੀਆਂ ਸੈਰਾਂ ਵੇਖ ਕੇ ਟੀਚੇ ਰੱਖ ਸਕਦਾ ਹੈ। ਸੰਪਰਕ ਅਤੇ ਦਵਾਈਆਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।';
 }

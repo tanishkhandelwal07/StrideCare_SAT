@@ -527,5 +527,57 @@
   "reminderOff": "ਦਵਾਈ ਦਰਜ ਹੋ ਗਈ ਹੈ। ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੂਚਨਾਵਾਂ ਬੰਦ ਹਨ।",
   "@reminderOff": {
     "description": "Needs native-speaker review."
+  },
+  "planSaved": "ਤਬਦੀਲੀਆਂ ਸਿੰਕ ਹੋ ਗਈਆਂ ਹਨ।",
+  "@planSaved": {
+    "description": "Needs native-speaker review."
+  },
+  "signIn": "ਸਾਈਨ ਇਨ ਕਰੋ",
+  "@signIn": {
+    "description": "Needs native-speaker review."
+  },
+  "signOut": "ਸਾਈਨ ਆਉਟ ਕਰੋ",
+  "@signOut": {
+    "description": "Needs native-speaker review."
+  },
+  "emailAddress": "ਈਮੇਲ ਪਤਾ",
+  "@emailAddress": {
+    "description": "Needs native-speaker review."
+  },
+  "passwordLabel": "ਪਾਸਵਰਡ",
+  "@passwordLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "cloudWorkspace": "ਦੇਖਭਾਲ ਖਾਤਾ",
+  "@cloudWorkspace": {
+    "description": "Needs native-speaker review."
+  },
+  "signInError": "ਈਮੇਲ, ਪਾਸਵਰਡ ਅਤੇ ਕਨੈਕਸ਼ਨ ਵੇਖ ਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "@signInError": {
+    "description": "Needs native-speaker review."
+  },
+  "noRole": "ਆਪਣੇ ਕਲੀਨਿਕ ਨੂੰ ਇਹ ਖਾਤਾ ਜੋੜਨ ਲਈ ਕਹੋ।",
+  "@noRole": {
+    "description": "Needs native-speaker review."
+  },
+  "noAssignments": "ਤੁਹਾਡੇ ਮਰੀਜ਼ ਇੱਥੇ ਦਿਸਣਗੇ।",
+  "@noAssignments": {
+    "description": "Needs native-speaker review."
+  },
+  "recentWalks": "ਹਾਲ ਦੀਆਂ ਸੈਰਾਂ",
+  "@recentWalks": {
+    "description": "Needs native-speaker review."
+  },
+  "cloudError": "ਸਾਂਝੀ ਜਾਣਕਾਰੀ ਨਹੀਂ ਮਿਲੀ। ਕਨੈਕਸ਼ਨ ਅਤੇ ਖਾਤੇ ਦੀ ਪਹੁੰਚ ਵੇਖੋ।",
+  "@cloudError": {
+    "description": "Needs native-speaker review."
+  },
+  "syncProblem": "ਸਿੰਕ ਰੁਕ ਗਿਆ ਹੈ। ਸੈਰਾਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਸੰਭਾਲੀਆਂ ਹਨ। ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਵੇਖੋ।",
+  "@syncProblem": {
+    "description": "Needs native-speaker review."
+  },
+  "sharedPrivacy": "ਤੁਹਾਡਾ ਫਿਜ਼ੀਓ ਸਿੰਕ ਕੀਤੀਆਂ ਸੈਰਾਂ ਵੇਖ ਕੇ ਟੀਚੇ ਰੱਖ ਸਕਦਾ ਹੈ। ਸੰਪਰਕ ਅਤੇ ਦਵਾਈਆਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦੀਆਂ ਹਨ।",
+  "@sharedPrivacy": {
+    "description": "Needs native-speaker review."
   }
 }

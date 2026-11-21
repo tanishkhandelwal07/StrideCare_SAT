@@ -527,5 +527,57 @@
   "reminderOff": "दवा दर्ज हो गई है। इस डिवाइस पर सूचनाएँ बंद हैं।",
   "@reminderOff": {
     "description": "Needs native-speaker review."
+  },
+  "planSaved": "बदलाव सिंक हो गए हैं।",
+  "@planSaved": {
+    "description": "Needs native-speaker review."
+  },
+  "signIn": "साइन इन करें",
+  "@signIn": {
+    "description": "Needs native-speaker review."
+  },
+  "signOut": "साइन आउट करें",
+  "@signOut": {
+    "description": "Needs native-speaker review."
+  },
+  "emailAddress": "ईमेल पता",
+  "@emailAddress": {
+    "description": "Needs native-speaker review."
+  },
+  "passwordLabel": "पासवर्ड",
+  "@passwordLabel": {
+    "description": "Needs native-speaker review."
+  },
+  "cloudWorkspace": "देखभाल खाता",
+  "@cloudWorkspace": {
+    "description": "Needs native-speaker review."
+  },
+  "signInError": "ईमेल, पासवर्ड और कनेक्शन जाँचकर फिर कोशिश करें।",
+  "@signInError": {
+    "description": "Needs native-speaker review."
+  },
+  "noRole": "अपने क्लिनिक से यह खाता जोड़ने को कहें।",
+  "@noRole": {
+    "description": "Needs native-speaker review."
+  },
+  "noAssignments": "आपके मरीज़ यहाँ दिखेंगे।",
+  "@noAssignments": {
+    "description": "Needs native-speaker review."
+  },
+  "recentWalks": "हाल की सैर",
+  "@recentWalks": {
+    "description": "Needs native-speaker review."
+  },
+  "cloudError": "साझा जानकारी नहीं मिली। अपना कनेक्शन और खाते की पहुँच जाँचें।",
+  "@cloudError": {
+    "description": "Needs native-speaker review."
+  },
+  "syncProblem": "सिंक रुक गया है। सैर इसी डिवाइस पर सहेजी गई हैं। अपना कनेक्शन जाँचें।",
+  "@syncProblem": {
+    "description": "Needs native-speaker review."
+  },
+  "sharedPrivacy": "आपके फ़िज़ियो सिंक की गई सैर देख सकते हैं और लक्ष्य तय कर सकते हैं। संपर्क और दवाएँ इसी डिवाइस पर रहती हैं।",
+  "@sharedPrivacy": {
+    "description": "Needs native-speaker review."
   }
 }

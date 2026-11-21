@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name":"StrideCare · Offline practice","type":"dart","request":"launch","program":"lib/main.dart","deviceId":"chrome"},
+    {"name":"StrideCare · Local Firebase","type":"dart","request":"launch","program":"lib/main.dart","deviceId":"chrome","toolArgs":["--dart-define=CARE_BACKEND=emulator","--web-port=8752"]}
+  ]
+}

@@ -8,9 +8,9 @@ part 'care_database.g.dart';
 class CareDatabase extends _$CareDatabase {
   CareDatabase(super.executor);
 
-  factory CareDatabase.local() => CareDatabase(
+  factory CareDatabase.local({String name = 'stridecare'}) => CareDatabase(
     driftDatabase(
-      name: 'stridecare',
+      name: name,
       web: DriftWebOptions(
         sqlite3Wasm: Uri.parse('sqlite3.wasm'),
         driftWorker: Uri.parse('drift_worker.js'),

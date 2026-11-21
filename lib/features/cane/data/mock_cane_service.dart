@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import '../domain/cane_service.dart';
+import 'live_packet.dart';
 
 enum _Phase { resting, holding, moving, paused }
 
@@ -32,6 +33,7 @@ class MockCaneService implements CaneService {
   final _fall = StreamController<DateTime>.broadcast();
   final _battery = StreamController<int>.broadcast();
 
+  final _parser = LivePacketParser();
   Timer? _timer;
   bool _disposed = false;
   var _phase = _Phase.resting;
@@ -131,13 +133,23 @@ class MockCaneService implements CaneService {
     _fractionalSteps -= increment;
     _totalSteps += increment;
     final bearingLoad = moving || _phase == _Phase.holding;
-    _load.add(
-      bearingLoad ? _walkLoad * (0.82 + 0.35 * _random.nextDouble()) : 0,
-    );
-    _steps.add(_totalSteps);
-    _cadence.add(cadence);
-    _speed.add(cadence * strideLengthMetres / 60);
-    if (moving) _gait.add(0.76 + _random.nextDouble() * 0.17);
+    final load = bearingLoad
+        ? _walkLoad * (0.82 + 0.35 * _random.nextDouble())
+        : 0.0;
+    final bytes = LivePacket(
+      (_ticks * 1000) & 0xffffffff,
+      _phase == _Phase.resting ? 0 : 1,
+      (load * 10).round(),
+      _totalSteps & 0xffff,
+      cadence.round(),
+      moving ? (76 + _random.nextDouble() * 17).round() : 0,
+    ).encode();
+    final packet = _parser.parse(bytes)!;
+    _load.add(packet.loadTenths / 10);
+    _steps.add((_totalSteps & ~0xffff) + packet.steps);
+    _cadence.add(packet.cadence.toDouble());
+    _speed.add(packet.cadence * strideLengthMetres / 60);
+    if (moving) _gait.add(packet.gait / 100);
   }
 
   @override

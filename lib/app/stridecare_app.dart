@@ -14,7 +14,8 @@ import '../features/clinic/clinic_page.dart';
 import '../features/safety/family_page.dart';
 
 class StrideCareApp extends ConsumerWidget {
-  const StrideCareApp({super.key, this.locale});
+  const StrideCareApp({super.key, this.locale, this.patientOnly = false});
+  final bool patientOnly;
   final Locale? locale;
 
   @override
@@ -43,9 +44,9 @@ class StrideCareApp extends ConsumerWidget {
         ...GlobalMaterialLocalizations.delegates,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: Uri.base.queryParameters['view'] == 'family'
+      home: !patientOnly && Uri.base.queryParameters['view'] == 'family'
           ? const FamilyPage()
-          : Uri.base.queryParameters['view'] == 'clinic'
+          : !patientOnly && Uri.base.queryParameters['view'] == 'clinic'
           ? const ClinicPage()
           : profile.when(
               data: (p) => p == null ? const Onboarding() : const WalkShell(),

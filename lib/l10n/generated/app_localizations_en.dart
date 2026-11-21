@@ -416,4 +416,47 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get reminderOff =>
       'Saved to your log. Notifications are off on this device.';
+
+  @override
+  String get planSaved => 'Your changes are synced.';
+
+  @override
+  String get signIn => 'Sign in';
+
+  @override
+  String get signOut => 'Sign out';
+
+  @override
+  String get emailAddress => 'Email address';
+
+  @override
+  String get passwordLabel => 'Password';
+
+  @override
+  String get cloudWorkspace => 'Connected care';
+
+  @override
+  String get signInError =>
+      'Check your email, password and connection, then try again.';
+
+  @override
+  String get noRole => 'Ask your clinic to link this account.';
+
+  @override
+  String get noAssignments => 'Assigned patients will appear here.';
+
+  @override
+  String get recentWalks => 'Recent walks';
+
+  @override
+  String get cloudError =>
+      'Couldn’t load shared data. Check your connection and account access.';
+
+  @override
+  String get syncProblem =>
+      'Sync interrupted. Your walks stay on this device. Check your connection.';
+
+  @override
+  String get sharedPrivacy =>
+      'Your assigned physio can see synced walks and set targets. Contacts and medicines stay on this device.';
 }

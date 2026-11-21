@@ -17,6 +17,10 @@ flutter run -d chrome
 
 For mobile, run `flutter devices` and then `flutter run -d <device-id>`. Run `flutter build web --no-web-resources-cdn` for a web bundle with local rendering resources. Serve the contents of `build/web` over HTTPS or localhost. Serve `.wasm` as `application/wasm`. Keep the origin and port stable to retain browser data between launches.
 
+## Run the connected app
+
+The Firebase build adds patient and clinician accounts, assignment-based access, automatic walk uploads and live target updates. The default build runs the offline practice experience. [Connected setup, demo accounts, dataset and schema](backend/README.md)
+
 ## Try the practice app
 
 Open the patient app at the server root. Choose a language and complete the nine setup screens. Use two different international-format phone numbers. Practice contacts are saved locally. The simulator does not send consent messages, SMS or calls.
@@ -29,7 +33,7 @@ Medicine stores individual scheduled entries and taken times. Scheduling a futur
 
 ## Implementation status
 
-Flutter web is the verified build target. The mobile projects include reminder integration but need device testing. Clinical deployment still requires hardware validation, background capture and buffering, authenticated Firebase sync, contact consent and emergency delivery with location and acknowledgements. The current wellness library does not yet provide a stage-specific guided rehabilitation program. Hindi and Punjabi strings are flagged for native-speaker review.
+Flutter web is the verified build target. The mobile projects include reminder integration but need device testing. Clinical deployment still requires hardware validation, background capture and buffering, production Firebase provisioning, contact consent and emergency delivery with location and acknowledgements. The current wellness library does not yet provide a stage-specific guided rehabilitation program. Hindi and Punjabi strings are flagged for native-speaker review.
 
 Walk thresholds live in `lib/features/walk/detection_config.dart`. The demo recovery formula is in `lib/features/progress/recovery_score.dart`. Daily averages weight load and rhythm by counted steps and calculate estimated pace from total distance and walking time. Sessions are attributed to their local start day.
 

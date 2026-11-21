@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signed() { return request.auth != null; }
+    function role(value) {
+      return signed() && get(/databases/$(database)/documents/accounts/$(request.auth.uid)).data.role == value;
+    }
+    function patient(pid) { return signed() && request.auth.uid == pid && role('patient'); }
+    function clinician(pid) {
+      return role('clinician') && exists(/databases/$(database)/documents/clinicians/$(request.auth.uid)/patients/$(pid));
+    }
+    function positive(n) { return n is number && n > 0 && n <= 1000000; }
+    function optionalPositive(n) { return n == null || positive(n); }
+    function validWalk(w) {
+      return w.keys().hasOnly(['startMs','endMs','steps','avgSpeed','distanceM','cadence','avgLoad'])
+        && w.startMs is int && w.startMs > 0 && w.endMs is int && w.endMs >= w.startMs
+        && w.steps is int && positive(w.steps) && w.avgLoad is number && w.avgLoad >= 0
+        && w.avgSpeed is number && w.avgSpeed >= 0 && w.distanceM is number && w.distanceM >= 0
+        && w.cadence is number && w.cadence >= 0;
+    }
+    match /accounts/{uid} { allow get: if signed() && request.auth.uid == uid; }
+    match /clinicians/{uid}/patients/{pid} { allow read: if role('clinician') && request.auth.uid == uid; }
+    match /patients/{pid}/walks/{id} {
+      allow read: if patient(pid) || clinician(pid);
+      allow create: if patient(pid) && validWalk(request.resource.data);
+      allow update: if patient(pid) && request.resource.data == resource.data;
+    }
+    match /patients/{pid}/plan/current {
+      allow read: if patient(pid) || clinician(pid);
+      allow create, update: if clinician(pid) && request.resource.data.keys().hasOnly(['speed','cadence','load','steps','minutes','breathing'])
+        && optionalPositive(request.resource.data.speed) && optionalPositive(request.resource.data.cadence)
+        && optionalPositive(request.resource.data.load) && optionalPositive(request.resource.data.steps)
+        && optionalPositive(request.resource.data.minutes) && request.resource.data.breathing is bool;
+    }
+  }
+}

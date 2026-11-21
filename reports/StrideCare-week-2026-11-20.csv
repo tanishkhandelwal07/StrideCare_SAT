@@ -1,0 +1,8 @@
+date_ist,source,walk_id,steps,walking_minutes,estimated_distance_m,estimated_pace_m_s,cadence_steps_min,mean_cane_load_n
+2026-11-14,synthetic,practice-baseline-2,270,5.0,135.0,0.45,54.0,114
+2026-11-15,synthetic,practice-baseline-1,288,5.0,144.0,0.48,57.6,113
+2026-11-16,synthetic,practice-01,300,5.0,150,0.5,60,110
+2026-11-17,synthetic,practice-02,330,5.0,165,0.55,66,106
+2026-11-18,synthetic,practice-03,360,5.0,180,0.6,72,100
+2026-11-19,synthetic,practice-04,336,5.0,168,0.56,67.2,106
+2026-11-20,synthetic,practice-05,306,5.0,153,0.51,61.2,130

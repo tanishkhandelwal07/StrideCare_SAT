@@ -93,7 +93,22 @@ void main() {
             await tester.tap(destination);
             await tester.pumpAndSettle();
             expect(find.text(messages[i]), findsOneWidget);
+            if (labels[i] == strings.progress) {
+              expect(find.text(strings.exampleReport), findsOneWidget);
+              expect(find.text(strings.report), findsNothing);
+            }
             if (labels[i] == strings.wellness) {
+              final cuisine = find.text(strings.mediterranean);
+              await Scrollable.ensureVisible(
+                tester.element(cuisine),
+                alignment: 0.3,
+              );
+              await tester.pumpAndSettle();
+              await tester.tap(cuisine);
+              await tester.pumpAndSettle();
+              expect(find.text(strings.beans), findsOneWidget);
+              expect(find.text(strings.chicken), findsOneWidget);
+              expect(find.text(strings.recipe), findsNothing);
               expect(find.text(strings.wellnessAdvice), findsOneWidget);
             }
             expect(tester.takeException(), isNull);

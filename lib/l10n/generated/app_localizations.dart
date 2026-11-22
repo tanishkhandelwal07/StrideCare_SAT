@@ -101,6 +101,108 @@ abstract class AppLocalizations {
     Locale('pa'),
   ];
 
+  /// No description provided for @exampleReport.
+  ///
+  /// In en, this message translates to:
+  /// **'Sample weekly report'**
+  String get exampleReport;
+
+  /// No description provided for @northIndian.
+  ///
+  /// In en, this message translates to:
+  /// **'North Indian'**
+  String get northIndian;
+
+  /// No description provided for @southIndian.
+  ///
+  /// In en, this message translates to:
+  /// **'South Indian'**
+  String get southIndian;
+
+  /// No description provided for @mediterranean.
+  ///
+  /// In en, this message translates to:
+  /// **'Mediterranean'**
+  String get mediterranean;
+
+  /// No description provided for @eastAsian.
+  ///
+  /// In en, this message translates to:
+  /// **'East Asian'**
+  String get eastAsian;
+
+  /// No description provided for @idli.
+  ///
+  /// In en, this message translates to:
+  /// **'Idli with vegetable sambar'**
+  String get idli;
+
+  /// No description provided for @idliMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Steam the idlis. Simmer cooked toor dal with pumpkin, tomato and sambar spices. Spoon the warm sambar over the idlis.'**
+  String get idliMethod;
+
+  /// No description provided for @fish.
+  ///
+  /// In en, this message translates to:
+  /// **'Coconut fish curry with rice'**
+  String get fish;
+
+  /// No description provided for @fishMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Simmer tomato, ginger and coconut milk. Add boneless fish and cook through. Serve with rice.'**
+  String get fishMethod;
+
+  /// No description provided for @beans.
+  ///
+  /// In en, this message translates to:
+  /// **'White bean and spinach stew'**
+  String get beans;
+
+  /// No description provided for @beansMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Soften garlic in olive oil. Add cooked white beans, chopped tomatoes and water. Simmer until soft and stir in spinach.'**
+  String get beansMethod;
+
+  /// No description provided for @chicken.
+  ///
+  /// In en, this message translates to:
+  /// **'Lemon chicken with couscous'**
+  String get chicken;
+
+  /// No description provided for @chickenMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Pan-cook chicken strips with olive oil and oregano until cooked through. Add lemon juice and serve with cooked couscous.'**
+  String get chickenMethod;
+
+  /// No description provided for @tofu.
+  ///
+  /// In en, this message translates to:
+  /// **'Ginger tofu and greens'**
+  String get tofu;
+
+  /// No description provided for @tofuMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Pan-fry tofu cubes with grated ginger. Add chopped greens and a splash of water. Cover until tender and serve over rice.'**
+  String get tofuMethod;
+
+  /// No description provided for @salmon.
+  ///
+  /// In en, this message translates to:
+  /// **'Steamed salmon with ginger rice'**
+  String get salmon;
+
+  /// No description provided for @salmonMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Steam a boneless salmon fillet until cooked through. Stir grated ginger and spring onion into hot rice. Serve together.'**
+  String get salmonMethod;
+
   /// No description provided for @sampleWeek.
   ///
   /// In en, this message translates to:

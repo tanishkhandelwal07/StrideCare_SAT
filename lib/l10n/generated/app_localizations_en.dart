@@ -12,6 +12,63 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get exampleReport => 'Sample weekly report';
+
+  @override
+  String get northIndian => 'North Indian';
+
+  @override
+  String get southIndian => 'South Indian';
+
+  @override
+  String get mediterranean => 'Mediterranean';
+
+  @override
+  String get eastAsian => 'East Asian';
+
+  @override
+  String get idli => 'Idli with vegetable sambar';
+
+  @override
+  String get idliMethod =>
+      'Steam the idlis. Simmer cooked toor dal with pumpkin, tomato and sambar spices. Spoon the warm sambar over the idlis.';
+
+  @override
+  String get fish => 'Coconut fish curry with rice';
+
+  @override
+  String get fishMethod =>
+      'Simmer tomato, ginger and coconut milk. Add boneless fish and cook through. Serve with rice.';
+
+  @override
+  String get beans => 'White bean and spinach stew';
+
+  @override
+  String get beansMethod =>
+      'Soften garlic in olive oil. Add cooked white beans, chopped tomatoes and water. Simmer until soft and stir in spinach.';
+
+  @override
+  String get chicken => 'Lemon chicken with couscous';
+
+  @override
+  String get chickenMethod =>
+      'Pan-cook chicken strips with olive oil and oregano until cooked through. Add lemon juice and serve with cooked couscous.';
+
+  @override
+  String get tofu => 'Ginger tofu and greens';
+
+  @override
+  String get tofuMethod =>
+      'Pan-fry tofu cubes with grated ginger. Add chopped greens and a splash of water. Cover until tender and serve over rice.';
+
+  @override
+  String get salmon => 'Steamed salmon with ginger rice';
+
+  @override
+  String get salmonMethod =>
+      'Steam a boneless salmon fillet until cooked through. Stir grated ginger and spring onion into hot rice. Serve together.';
+
+  @override
   String get sampleWeek => 'Explore a sample week';
 
   @override

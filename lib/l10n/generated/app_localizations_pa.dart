@@ -12,6 +12,63 @@ class AppLocalizationsPa extends AppLocalizations {
   AppLocalizationsPa([String locale = 'pa']) : super(locale);
 
   @override
+  String get exampleReport => 'ਨਮੂਨਾ ਹਫ਼ਤਾਵਾਰੀ ਰਿਪੋਰਟ';
+
+  @override
+  String get northIndian => 'ਉੱਤਰੀ ਭਾਰਤੀ';
+
+  @override
+  String get southIndian => 'ਦੱਖਣੀ ਭਾਰਤੀ';
+
+  @override
+  String get mediterranean => 'ਭੂਮੱਧ ਸਾਗਰੀ';
+
+  @override
+  String get eastAsian => 'ਪੂਰਬੀ ਏਸ਼ੀਆਈ';
+
+  @override
+  String get idli => 'ਸਬਜ਼ੀਆਂ ਦੇ ਸਾਂਬਰ ਨਾਲ ਇਡਲੀ';
+
+  @override
+  String get idliMethod =>
+      'ਇਡਲੀ ਭਾਫ਼ ਵਿੱਚ ਪਕਾਓ। ਪੱਕੀ ਅਰਹਰ ਦੀ ਦਾਲ ਵਿੱਚ ਕੱਦੂ, ਟਮਾਟਰ ਤੇ ਸਾਂਬਰ ਮਸਾਲਾ ਪਾ ਕੇ ਪਕਾਓ। ਇਡਲੀ ਉੱਤੇ ਗਰਮ ਸਾਂਬਰ ਪਾਓ।';
+
+  @override
+  String get fish => 'ਚੌਲਾਂ ਨਾਲ ਨਾਰੀਅਲ ਵਾਲੀ ਮੱਛੀ ਦੀ ਕਰੀ';
+
+  @override
+  String get fishMethod =>
+      'ਟਮਾਟਰ, ਅਦਰਕ ਤੇ ਨਾਰੀਅਲ ਦਾ ਦੁੱਧ ਪਕਾਓ। ਬਿਨਾਂ ਕੰਡਿਆਂ ਵਾਲੀ ਮੱਛੀ ਪਾ ਕੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਕਾਓ ਤੇ ਚੌਲਾਂ ਨਾਲ ਪਰੋਸੋ।';
+
+  @override
+  String get beans => 'ਚਿੱਟੀਆਂ ਫਲੀਆਂ ਤੇ ਪਾਲਕ ਦਾ ਸ਼ੋਰਬਾ';
+
+  @override
+  String get beansMethod =>
+      'ਜੈਤੂਨ ਦੇ ਤੇਲ ਵਿੱਚ ਲਸਣ ਭੁੰਨੋ। ਪੱਕੀਆਂ ਚਿੱਟੀਆਂ ਫਲੀਆਂ, ਕੱਟੇ ਟਮਾਟਰ ਤੇ ਪਾਣੀ ਪਾਓ। ਨਰਮ ਹੋਣ ਤੱਕ ਪਕਾਓ ਤੇ ਪਾਲਕ ਮਿਲਾਓ।';
+
+  @override
+  String get chicken => 'ਨਿੰਬੂ ਵਾਲਾ ਚਿਕਨ ਤੇ ਕੂਸਕੂਸ';
+
+  @override
+  String get chickenMethod =>
+      'ਚਿਕਨ ਦੀਆਂ ਪਤਲੀਆਂ ਕਤਲੀਆਂ ਜੈਤੂਨ ਦੇ ਤੇਲ ਤੇ ਓਰੇਗਾਨੋ ਨਾਲ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਕਾਓ। ਨਿੰਬੂ ਦਾ ਰਸ ਪਾਓ ਤੇ ਪੱਕੇ ਕੂਸਕੂਸ ਨਾਲ ਪਰੋਸੋ।';
+
+  @override
+  String get tofu => 'ਅਦਰਕ ਵਾਲਾ ਟੋਫੂ ਤੇ ਹਰੀਆਂ ਸਬਜ਼ੀਆਂ';
+
+  @override
+  String get tofuMethod =>
+      'ਟੋਫੂ ਦੇ ਟੁਕੜੇ ਕੱਦੂਕਸ ਕੀਤੇ ਅਦਰਕ ਨਾਲ ਭੁੰਨੋ। ਕੱਟੀਆਂ ਹਰੀਆਂ ਸਬਜ਼ੀਆਂ ਤੇ ਥੋੜ੍ਹਾ ਪਾਣੀ ਪਾਓ। ਢੱਕ ਕੇ ਨਰਮ ਹੋਣ ਤੱਕ ਪਕਾਓ ਤੇ ਚੌਲਾਂ ਨਾਲ ਪਰੋਸੋ।';
+
+  @override
+  String get salmon => 'ਅਦਰਕ ਵਾਲੇ ਚੌਲ ਤੇ ਭਾਫ਼ ਵਿੱਚ ਪੱਕੀ ਸੈਲਮਨ';
+
+  @override
+  String get salmonMethod =>
+      'ਬਿਨਾਂ ਕੰਡਿਆਂ ਵਾਲੀ ਸੈਲਮਨ ਭਾਫ਼ ਵਿੱਚ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਕਾਓ। ਗਰਮ ਚੌਲਾਂ ਵਿੱਚ ਕੱਦੂਕਸ ਕੀਤਾ ਅਦਰਕ ਤੇ ਹਰਾ ਪਿਆਜ਼ ਮਿਲਾਓ। ਦੋਵੇਂ ਇਕੱਠੇ ਪਰੋਸੋ।';
+
+  @override
   String get sampleWeek => 'ਇੱਕ ਨਮੂਨਾ ਹਫ਼ਤਾ ਵੇਖੋ';
 
   @override

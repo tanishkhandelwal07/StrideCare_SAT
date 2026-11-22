@@ -34,9 +34,13 @@ class ProgressPage extends ConsumerWidget {
             Text(s.saveError)
           else if (rows.isLoading)
             const LinearProgressIndicator()
-          else if (week.isEmpty)
-            Text(s.emptyWalks)
-          else ...[
+          else if (week.isEmpty) ...[
+            Text(s.emptyWalks),
+            const Divider(),
+            Text(s.exampleReport, style: CareTokens.brand),
+            Text(s.sampleSource),
+            const SampleWeekReport(),
+          ] else ...[
             WeeklyCharts(
               (ref.watch(metricsProvider).value ?? [])
                   .where((d) => d.day.compareTo(dayKey(start)) >= 0)
@@ -56,25 +60,25 @@ class ProgressPage extends ConsumerWidget {
               ),
               Text('${s.loadTrend} · ${w.avgLoad.round()}'),
             ],
-          ],
-          const SampleWeekButton(),
-          OutlinedButton(
-            onPressed: () async {
-              try {
-                await shareReport(
-                  ref.read(databaseProvider),
-                  s,
-                  ref.read(profileProvider).value!,
-                );
-              } catch (_) {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text(s.saveError)));
+
+            OutlinedButton(
+              onPressed: () async {
+                try {
+                  await shareReport(
+                    ref.read(databaseProvider),
+                    s,
+                    ref.read(profileProvider).value!,
+                  );
+                } catch (_) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text(s.saveError)));
+                  }
                 }
-              }
-            },
-            child: Text(s.report),
-          ),
+              },
+              child: Text(s.report),
+            ),
+          ],
         ],
       ),
     );

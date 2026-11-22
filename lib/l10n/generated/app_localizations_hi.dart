@@ -12,6 +12,63 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
+  String get exampleReport => 'उदाहरण साप्ताहिक रिपोर्ट';
+
+  @override
+  String get northIndian => 'उत्तर भारतीय';
+
+  @override
+  String get southIndian => 'दक्षिण भारतीय';
+
+  @override
+  String get mediterranean => 'भूमध्यसागरीय';
+
+  @override
+  String get eastAsian => 'पूर्वी एशियाई';
+
+  @override
+  String get idli => 'सब्ज़ियों के सांभर के साथ इडली';
+
+  @override
+  String get idliMethod =>
+      'इडली भाप में पकाएँ। पकी अरहर दाल में कद्दू, टमाटर और सांभर मसाला डालकर पकाएँ। इडली पर गरम सांभर डालें।';
+
+  @override
+  String get fish => 'चावल के साथ नारियल वाली मछली करी';
+
+  @override
+  String get fishMethod =>
+      'टमाटर, अदरक और नारियल का दूध पकाएँ। बिना काँटे की मछली डालकर पूरी तरह पकाएँ और चावल के साथ परोसें।';
+
+  @override
+  String get beans => 'सफ़ेद बीन्स और पालक का शोरबा';
+
+  @override
+  String get beansMethod =>
+      'जैतून के तेल में लहसुन भूनें। पकी सफ़ेद बीन्स, कटे टमाटर और पानी डालें। नरम होने तक पकाएँ और पालक मिलाएँ।';
+
+  @override
+  String get chicken => 'नींबू वाला चिकन और कूसकूस';
+
+  @override
+  String get chickenMethod =>
+      'चिकन की पतली पट्टियाँ जैतून के तेल और ओरिगैनो में पूरी तरह पकाएँ। नींबू का रस डालें और पके कूसकूस के साथ परोसें।';
+
+  @override
+  String get tofu => 'अदरक वाला टोफू और हरी सब्ज़ियाँ';
+
+  @override
+  String get tofuMethod =>
+      'टोफू के टुकड़े कद्दूकस किए अदरक के साथ भूनें। कटी हरी सब्ज़ियाँ और थोड़ा पानी डालें। ढककर नरम होने तक पकाएँ और चावल के साथ परोसें।';
+
+  @override
+  String get salmon => 'अदरक वाले चावल और भाप में पकी सैल्मन';
+
+  @override
+  String get salmonMethod =>
+      'बिना काँटे की सैल्मन भाप में पूरी तरह पकाएँ। गरम चावल में कद्दूकस किया अदरक और हरा प्याज़ मिलाएँ। दोनों साथ परोसें।';
+
+  @override
   String get sampleWeek => 'एक उदाहरण सप्ताह देखें';
 
   @override

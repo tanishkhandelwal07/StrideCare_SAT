@@ -1,4 +1,9 @@
 {
+  "sosTitle": "SOS check-in",
+  "sosCheck": "Are you okay?",
+  "sosRealHint": "You have 10 seconds to cancel. This device needs a connection to request an alert.",
+  "sosPractice": "Practice a 10-second fall check. No one will be contacted.",
+  "sosUnconfirmed": "Contact delivery is unconfirmed. If you need urgent help, call local emergency services.",
   "exampleReport": "Sample weekly report",
   "northIndian": "North Indian",
   "southIndian": "South Indian",

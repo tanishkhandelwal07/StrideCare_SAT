@@ -10,11 +10,11 @@ import 'package:stridecare/l10n/generated/app_localizations.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  test('two ordered escalation stages after a 30-second countdown', () {
-    expect(fallStage(const Duration(seconds: 29)), FallStage.countdown);
-    expect(fallStage(const Duration(seconds: 30)), FallStage.firstContact);
-    expect(fallStage(const Duration(seconds: 149)), FallStage.firstContact);
-    expect(fallStage(const Duration(seconds: 150)), FallStage.secondContact);
+  test('two ordered escalation stages after a 10-second countdown', () {
+    expect(fallStage(const Duration(seconds: 9)), FallStage.countdown);
+    expect(fallStage(const Duration(seconds: 10)), FallStage.firstContact);
+    expect(fallStage(const Duration(seconds: 129)), FallStage.firstContact);
+    expect(fallStage(const Duration(seconds: 130)), FallStage.secondContact);
   });
   test('saved walks aggregate once and produce a weekly PDF', () async {
     final db = CareDatabase(NativeDatabase.memory());

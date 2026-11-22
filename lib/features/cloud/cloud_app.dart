@@ -1,3 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+import '../safety/practice_fall.dart';
+
 import 'dart:async';
 
 import 'package:material_ui/material_ui.dart';
@@ -194,6 +198,17 @@ class _PatientState extends State<_Patient> {
     overrides: [
       databaseProvider.overrideWithValue(db),
       connectedAccountProvider.overrideWithValue(true),
+      sosSenderProvider.overrideWithValue(
+        (event) => FirebaseFirestore.instance
+            .collection('patients')
+            .doc(widget.uid)
+            .collection('sos')
+            .doc(event.id)
+            .set({
+              'requestedAt': FieldValue.serverTimestamp(),
+              'fallMs': event.detectedAt.millisecondsSinceEpoch,
+            }),
+      ),
     ],
   );
   late final sync = WalkSync(db, widget.app.care, widget.uid);

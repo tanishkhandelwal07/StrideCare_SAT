@@ -20,6 +20,16 @@ service cloud.firestore {
     }
     match /accounts/{uid} { allow get: if signed() && request.auth.uid == uid; }
     match /clinicians/{uid}/patients/{pid} { allow read: if role('clinician') && request.auth.uid == uid; }
+    match /patients/{pid}/sos/{id} {
+      allow create: if patient(pid) && id.matches('[0-9]+-[0-9]+')
+        && exists(/databases/$(database)/documents/deliveryRoutes/$(pid))
+        && get(/databases/$(database)/documents/deliveryRoutes/$(pid)).data.sosEnabled == true
+        && request.resource.data.keys().hasOnly(['requestedAt','fallMs'])
+        && request.resource.data.requestedAt == request.time
+        && request.resource.data.fallMs is int
+        && request.resource.data.fallMs <= request.time.toMillis() - 10000
+        && request.resource.data.fallMs >= request.time.toMillis() - 300000;
+    }
     match /patients/{pid}/walks/{id} {
       allow read: if patient(pid) || clinician(pid);
       allow create: if patient(pid) && validWalk(request.resource.data);

@@ -12,6 +12,24 @@ class AppLocalizationsPa extends AppLocalizations {
   AppLocalizationsPa([String locale = 'pa']) : super(locale);
 
   @override
+  String get sosTitle => 'ਐੱਸਓਐੱਸ ਸਹਾਇਤਾ';
+
+  @override
+  String get sosCheck => 'ਕੀ ਤੁਸੀਂ ਠੀਕ ਹੋ?';
+
+  @override
+  String get sosRealHint =>
+      'ਰੱਦ ਕਰਨ ਲਈ 10 ਸਕਿੰਟ ਹਨ। ਸੂਚਨਾ ਭੇਜਣ ਦੀ ਬੇਨਤੀ ਲਈ ਇੰਟਰਨੈੱਟ ਚਾਹੀਦਾ ਹੈ।';
+
+  @override
+  String get sosPractice =>
+      '10 ਸਕਿੰਟ ਦੀ ਜਾਂਚ ਦਾ ਅਭਿਆਸ ਕਰੋ। ਕਿਸੇ ਨੂੰ ਸੂਚਨਾ ਨਹੀਂ ਜਾਵੇਗੀ।';
+
+  @override
+  String get sosUnconfirmed =>
+      'ਸੰਪਰਕ ਨੂੰ ਸੂਚਨਾ ਮਿਲਣ ਦੀ ਪੁਸ਼ਟੀ ਨਹੀਂ ਹੋਈ। ਤੁਰੰਤ ਮਦਦ ਲਈ ਸਥਾਨਕ ਐਮਰਜੈਂਸੀ ਸੇਵਾ ਨੂੰ ਫ਼ੋਨ ਕਰੋ।';
+
+  @override
   String get exampleReport => 'ਨਮੂਨਾ ਹਫ਼ਤਾਵਾਰੀ ਰਿਪੋਰਟ';
 
   @override

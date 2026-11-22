@@ -12,6 +12,24 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get sosTitle => 'SOS check-in';
+
+  @override
+  String get sosCheck => 'Are you okay?';
+
+  @override
+  String get sosRealHint =>
+      'You have 10 seconds to cancel. This device needs a connection to request an alert.';
+
+  @override
+  String get sosPractice =>
+      'Practice a 10-second fall check. No one will be contacted.';
+
+  @override
+  String get sosUnconfirmed =>
+      'Contact delivery is unconfirmed. If you need urgent help, call local emergency services.';
+
+  @override
   String get exampleReport => 'Sample weekly report';
 
   @override

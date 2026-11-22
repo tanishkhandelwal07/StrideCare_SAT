@@ -5,13 +5,37 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../storage/care_database.dart';
 import '../profile/profile.dart';
+import '../cane/data/ble_cane_service.dart';
 import '../cane/application/cane_provider.dart';
 
 enum FallStage { countdown, firstContact, secondContact }
 
-FallStage fallStage(Duration age) => age.inSeconds < 30
+const fallCountdownSeconds = 10;
+final sosSenderProvider = Provider<Future<void> Function(FallEvent)?>(
+  (_) => null,
+);
+final liveSosProvider = Provider<bool>(
+  (ref) =>
+      ref.watch(sosSenderProvider) != null &&
+      ref.watch(caneServiceProvider) is BleCaneService,
+);
+
+Future<void> recordFall(CareDatabase db, int uid, DateTime time) async {
+  await db
+      .into(db.fallEvents)
+      .insert(
+        FallEvent(
+          id: '$uid-${time.microsecondsSinceEpoch}',
+          userId: uid,
+          detectedAt: time,
+        ),
+        mode: InsertMode.insertOrIgnore,
+      );
+}
+
+FallStage fallStage(Duration age) => age.inSeconds < fallCountdownSeconds
     ? FallStage.countdown
-    : age.inSeconds < 150
+    : age.inSeconds < fallCountdownSeconds + 120
     ? FallStage.firstContact
     : FallStage.secondContact;
 final unresolvedFallProvider = StreamProvider<FallEvent?>((ref) {
@@ -26,16 +50,7 @@ final fallMonitorProvider = Provider<void>((ref) {
   final sub = cane.fall.listen((time) async {
     final user = ref.read(profileProvider).value;
     if (user == null) return;
-    await db
-        .into(db.fallEvents)
-        .insert(
-          FallEvent(
-            id: '${user.id}-${time.microsecondsSinceEpoch}',
-            userId: user.id,
-            detectedAt: time,
-          ),
-          mode: InsertMode.insertOrIgnore,
-        );
+    await recordFall(db, user.id, time);
   });
   ref.onDispose(sub.cancel);
 });
@@ -47,3 +62,23 @@ Future<void> acknowledgeFall(CareDatabase db, FallEvent event) =>
     (db.update(db.fallEvents)..where((r) => r.id.equals(event.id))).write(
       FallEventsCompanion(acknowledgedAt: Value(DateTime.now())),
     );
+
+// Only the real-cane, authenticated build may submit an SOS. Recheck
+// acknowledgement before submitting when the screen resumes.
+final sendSosProvider = FutureProvider.autoDispose.family<void, FallEvent>((
+  ref,
+  event,
+) async {
+  if (!ref.read(liveSosProvider)) return;
+  final db = ref.read(databaseProvider);
+  final row = await (db.select(
+    db.fallEvents,
+  )..where((r) => r.id.equals(event.id))).getSingle();
+  final age = DateTime.now().difference(row.detectedAt);
+  if (row.acknowledgedAt != null ||
+      age.inSeconds < fallCountdownSeconds ||
+      age.inMinutes >= 5) {
+    return;
+  }
+  await ref.read(sosSenderProvider)!(event);
+});

@@ -1,3 +1,5 @@
+import '../../safety/practice_fall.dart';
+import '../../../storage/care_database.dart';
 import '../../progress/sample_week.dart';
 
 import 'package:material_ui/material_ui.dart';
@@ -116,6 +118,30 @@ class TodayPage extends ConsumerWidget {
                 '${s.pace} · ${paceWords(s, time.inSeconds == 0 ? 0 : today.fold(0.0, (n, w) => n + w.distanceM) / time.inSeconds)}',
               ),
           ],
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.sos_outlined),
+            title: Text(s.sosTitle),
+            subtitle: Text(
+              ref.watch(liveSosProvider) ? s.sosRealHint : s.sosPractice,
+            ),
+            onTap: () async {
+              final user = ref.read(profileProvider).value;
+              if (user == null) return;
+              try {
+                await recordFall(
+                  ref.read(databaseProvider),
+                  user.id,
+                  DateTime.now(),
+                );
+              } catch (_) {
+                if (context.mounted) {
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text(s.saveError)));
+                }
+              }
+            },
+          ),
           const Divider(),
           Text(s.recoveryLabel, style: CareTokens.brand),
           if (score == null)

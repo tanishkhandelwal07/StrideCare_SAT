@@ -36,19 +36,29 @@ class WalkShell extends ConsumerWidget {
       final age = (ref.watch(fallClockProvider).value ?? DateTime.now())
           .difference(event.detectedAt);
       final stage = fallStage(age);
+      final real = ref.watch(liveSosProvider);
+      final submission = real && stage != FallStage.countdown
+          ? ref.watch(sendSosProvider(event))
+          : null;
       return Scaffold(
         body: SafeArea(
           child: SectionPage(
-            title: s.simFall,
-            message: s.contactNote,
+            title: real ? s.sosCheck : s.simFall,
+            message: real ? s.sosRealHint : s.sosPractice,
             content: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(switch (stage) {
-                  FallStage.countdown => '${30 - age.inSeconds}',
-                  FallStage.firstContact => s.firstStage,
-                  FallStage.secondContact => s.secondStage,
-                }, style: CareTokens.brand),
+                Text(
+                  real && submission != null
+                      ? s.sosUnconfirmed
+                      : switch (stage) {
+                          FallStage.countdown =>
+                            '${fallCountdownSeconds - age.inSeconds.clamp(0, fallCountdownSeconds)}',
+                          FallStage.firstContact => s.firstStage,
+                          FallStage.secondContact => s.secondStage,
+                        },
+                  style: CareTokens.brand,
+                ),
                 FilledButton(
                   onPressed: () =>
                       acknowledgeFall(ref.read(databaseProvider), event),

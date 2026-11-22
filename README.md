@@ -41,7 +41,7 @@ From Today, select **Cane not connected. Fix this**. Follow the attachment and s
 
 Open **/?view=clinic** on the same origin and browser profile to inspect practice trends, set thresholds, set daily ring goals and approve seated breathing. Reopen the patient view and reconnect the mock cane after changing thresholds. **/?view=family** displays activity, estimated pace and fall history. Both are local demonstration views. They share browser storage and provide no remote access or authentication.
 
-Medicine stores individual scheduled entries and taken times. Scheduling a future entry on Android or iOS requests notification permission. The web build keeps the log only. Wellness includes two meal ideas, a daily meal check-in and an approval gate. The fall simulator stores detections and acknowledgements, shows a 30-second countdown and advances through two simulated contact stages.
+Medicine stores individual scheduled entries and taken times. Scheduling a future entry on Android or iOS requests notification permission. The web build keeps the log only. Wellness includes meal ideas across four cuisines, a daily meal check-in and an approval gate. The fall simulator stores detections and acknowledgements, shows a 10-second countdown and advances through two simulated contact stages.
 
 ## Implementation status
 
@@ -64,3 +64,5 @@ Schema version 2 includes the original 13 typed tables plus local preferences. I
 5. Validate the readings and vibration on a physical Android or iOS device. Walk detection consumes grip, load and steps. The UI has no manual walk controls.
 
 The mock emits a one-second telemetry sample after connection. It simulates picking up the cane, loading the tip, stepping, pausing while holding it, releasing it and resting between walks. Slower days, a gradual change in estimated pace and cane load, battery discharge and occasional fall events are modelled. Tests can inject a seed, sample interval, clock and recovery start date. Mock vibration acknowledges the command in software.
+
+Today includes an SOS check-in. The default practice build sends no messages. See [SOS and scheduled report setup](backend/DELIVERY.md) for the connected build and its delivery limits.

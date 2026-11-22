@@ -12,6 +12,24 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
+  String get sosTitle => 'एसओएस सहायता';
+
+  @override
+  String get sosCheck => 'क्या आप ठीक हैं?';
+
+  @override
+  String get sosRealHint =>
+      'रद्द करने के लिए 10 सेकंड हैं। सूचना भेजने के अनुरोध के लिए इंटरनेट चाहिए।';
+
+  @override
+  String get sosPractice =>
+      '10 सेकंड की जाँच का अभ्यास करें। किसी को सूचना नहीं जाएगी।';
+
+  @override
+  String get sosUnconfirmed =>
+      'संपर्क को सूचना मिलने की पुष्टि नहीं हुई है। तुरंत मदद चाहिए तो स्थानीय आपात सेवा को फ़ोन करें।';
+
+  @override
   String get exampleReport => 'उदाहरण साप्ताहिक रिपोर्ट';
 
   @override

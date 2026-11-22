@@ -101,6 +101,36 @@ abstract class AppLocalizations {
     Locale('pa'),
   ];
 
+  /// No description provided for @sosTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'SOS check-in'**
+  String get sosTitle;
+
+  /// No description provided for @sosCheck.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you okay?'**
+  String get sosCheck;
+
+  /// No description provided for @sosRealHint.
+  ///
+  /// In en, this message translates to:
+  /// **'You have 10 seconds to cancel. This device needs a connection to request an alert.'**
+  String get sosRealHint;
+
+  /// No description provided for @sosPractice.
+  ///
+  /// In en, this message translates to:
+  /// **'Practice a 10-second fall check. No one will be contacted.'**
+  String get sosPractice;
+
+  /// No description provided for @sosUnconfirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact delivery is unconfirmed. If you need urgent help, call local emergency services.'**
+  String get sosUnconfirmed;
+
   /// No description provided for @exampleReport.
   ///
   /// In en, this message translates to:
